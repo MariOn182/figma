@@ -2,4 +2,173 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
 }
+
+.header {
+  height: 877px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: url("../../tests/assets/images/main_img.jpg") no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+
+  &-top {
+    height: 104px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    & > div {
+      margin-top: 48px;
+    }
+
+
+    &-logo {
+      margin-left: 183px;
+      font-family: 'Akronim', cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 49px;
+      line-height: 56px;
+    }
+
+    &-menu {
+      margin-right: 159px;
+
+      & > ul {
+        display: flex;
+      }
+
+      &-list {
+        margin-right: 20px;
+
+
+        &_a {
+          color: rgba(255, 255, 255, 0.69);
+        }
+
+        &_m {
+          border: none;
+        }
+
+        &_w {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 123px;
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 31px;
+
+      & > h1 {
+        margin: 0;
+        color: #fff;
+        font-family: 'Forum', cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 61px;
+        line-height: 67px;
+      }
+
+      & > span {
+        font-family: 'PT Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 23px;
+        line-height: 30px;
+      }
+
+    }
+
+    &-menu {
+      &-button {
+        font-size: 16px;
+        border: 2px solid #FFFFFF;
+        width: 196px;
+        height: 40px;
+
+        _m {
+          color: #FFFFFF;
+          margin-right: 10px;
+          background: rgba(0, 0, 0, 0.24);
+        }
+      }
+
+    }
+
+  }
+}
+
+.info-block {
+  height: 640px;
+  background: #FFFFFF;
+  padding: 114px 131px 40px 128px;
+  display: flex;
+  justify-content: center;
+  font-family: 'PT Sans', sans-serif;
+
+  &-article {
+    width: 699px;
+    margin-right: 98px;
+    font-size: 25px;
+    line-height: 137.6%;
+  }
+
+  &-img {
+    width: 385px;
+    height: 439px;
+    border-radius: 12px;
+    background: url("../../tests/assets/images/master.jpg") no-repeat;
+  }
+}
+
+.rectangle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 649px;
+  top: 1432.71px;
+  background: #FFFFFF;
+  transform: rotate(-45deg);
+}
+
+.portfolio-block {
+  height: 992px;
+  background: url("../../tests/assets/images/portfolio-block-fon.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &-menu {
+
+  }
+
+  &-gallery {
+    background-color: #FFFFFF;
+    width: 1088px;
+    height: 645px;
+  }
+}
+
+
+
+
+
+
