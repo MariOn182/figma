@@ -59,6 +59,11 @@
       font-weight: normal;
       font-size: 49px;
       line-height: 56px;
+
+      & > a {
+        color: #DBD9D9;
+        text-decoration: none;
+      }
     }
 
   }
@@ -107,6 +112,10 @@
   & > ul {
     display: flex;
 
+    & > li {
+      cursor: pointer;
+    }
+
 
     & > li:not(:first-child):before {
       content: '';
@@ -124,7 +133,6 @@
 
   &__link {
     margin-right: 20px;
-    cursor: pointer;
 
 
   }
