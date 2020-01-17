@@ -6,6 +6,31 @@
   list-style-type: none;
 }
 
+.user-button {
+  &-button {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    border: 2px solid #FFFFFF;
+    width: 196px;
+    height: 40px;
+    color: #444343;
+
+    &_m {
+      color: #FFFFFF;
+      margin-right: 5px;
+      background: rgba(0, 0, 0, 0.24);
+    }
+
+    &_n {
+      color: #FFFFFF;
+      margin-right: 5px;
+      background: #B5B5B5;
+    }
+  }
+
+}
+
 .header {
   height: 877px;
   display: flex;
@@ -95,22 +120,6 @@
 
     }
 
-    &-menu {
-      &-button {
-        font-size: 16px;
-        border: 2px solid #FFFFFF;
-        width: 196px;
-        height: 40px;
-        color: #444343;
-
-        &_m {
-          color: #FFFFFF;
-          margin-right: 10px;
-          background: rgba(0, 0, 0, 0.24);
-        }
-      }
-
-    }
 
   }
 }
@@ -258,6 +267,11 @@
     &-buttons {
       margin-bottom: 75px;
     }
+
+    &-social > img {
+      margin-right: 10px;
+    }
+
   }
 
   &-bottom {
