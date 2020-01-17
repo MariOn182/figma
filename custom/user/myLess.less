@@ -102,22 +102,24 @@
 
 .main-menu {
   margin-right: 159px;
+  color: #DBD9D9;
 
   & > ul {
     display: flex;
+
+
+    & > li:not(:first-child):before {
+      content: '';
+      width: 1px;
+      height: 20px;
+      border: 1px solid #3E3E3E;
+      margin-left: 10px;
+    }
   }
 
   &__link {
     margin-right: 20px;
-
-
-    &_a {
-      color: rgba(255, 255, 255, 0.69);
-    }
-
-    &_m {
-      border: none;
-    }
+    cursor: pointer;
 
     &_w {
       color: #ffffff;
