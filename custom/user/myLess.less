@@ -32,7 +32,7 @@
 }
 
 .header {
-  height: 877px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -52,7 +52,7 @@
     }
 
 
-    &-logo {
+    &__logo {
       margin-left: 183px;
       font-family: 'Akronim', cursive;
       font-style: normal;
@@ -61,40 +61,16 @@
       line-height: 56px;
     }
 
-    &-menu {
-      margin-right: 159px;
-
-      & > ul {
-        display: flex;
-      }
-
-      &-list {
-        margin-right: 20px;
-
-
-        &_a {
-          color: rgba(255, 255, 255, 0.69);
-        }
-
-        &_m {
-          border: none;
-        }
-
-        &_w {
-          color: #ffffff;
-        }
-      }
-    }
   }
 
-  &-bottom {
+  &-text {
     align-self: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 123px;
 
-    &-info {
+    &__title {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -124,6 +100,31 @@
   }
 }
 
+.main-menu {
+  margin-right: 159px;
+
+  & > ul {
+    display: flex;
+  }
+
+  &__link {
+    margin-right: 20px;
+
+
+    &_a {
+      color: rgba(255, 255, 255, 0.69);
+    }
+
+    &_m {
+      border: none;
+    }
+
+    &_w {
+      color: #ffffff;
+    }
+  }
+}
+
 .info-block {
   height: 640px;
   background: #FFFFFF;
@@ -147,16 +148,6 @@
   }
 }
 
-.rectangle {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  left: 649px;
-  top: 1432.71px;
-  background: #FFFFFF;
-  transform: rotate(-45deg);
-}
-
 .portfolio-block {
   height: 992px;
   background: url("../../tests/assets/images/portfolio-block-fon.jpg") no-repeat;
@@ -166,6 +157,26 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: #FFFFFF;
+    transform: rotate(-45deg);
+    margin: -160px auto 60px;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: url("../../tests/assets/images/portfolio-block-fon.jpg");
+    transform: rotate(-45deg);
+    margin: 60px auto -160px;
+  }
 
   &-menu {
     & > h1 {
@@ -193,6 +204,13 @@
     background-color: #FFFFFF;
     width: 1088px;
     height: 645px;
+
+    & > img {
+      width: 340px;
+      border-radius: 7px;
+      margin: 10px;
+
+    }
   }
 }
 
@@ -207,8 +225,12 @@
   }
 
   &-slider {
-    height: 320px;
+    height: 583px;
     width: 100%;
+
+    & img {
+      width: 100%
+    }
   }
 }
 
@@ -232,7 +254,7 @@
 
   &-gallery {
     width: 100%;
-    height: 500px;
+    height: 600px;
     background: url("../../tests/assets/images/works-block-fon.jpg") no-repeat;
     background-size: cover;
   }

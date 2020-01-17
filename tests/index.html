@@ -10,24 +10,22 @@
 <body>
 <header class="header">
     <div class="header-top">
-        <div class="header-top-logo"><span>MK</span></div>
-        <div class="header-top-menu">
+        <div class="header-top__logo"><span>MK</span></div>
+        <nav class="main-menu">
             <ul>
-                <li class="header-top-menu-list header-top-menu-list_w">портфолио</li>
-                <li class="header-top-menu-list header-top-menu-list_a">календарь</li>
-                <li class="header-top-menu-list header-top-menu-list_a">цены</li>
-                <li class="header-top-menu-list header-top-menu-list_a header-top-menu-list header-top-menu-list_m ">
-                    контакты
-                </li>
+                <li><a class="main-menu__link"></a>портфолио</li>
+                <li><a class="main-menu__link"></a>календарь</li>
+                <li><a class="main-menu__link"></a>цены</li>
+                <li><a class="main-menu__link"></a>контакты</li>
             </ul>
-        </div>
+        </nav>
     </div>
-    <div class="header-bottom">
-        <div class="header-bottom-info">
+    <div class="header-text">
+        <div class="header-text__title">
             <h1>Марина Кобара</h1>
             <span>мульти-концепт-фотограф</span>
         </div>
-        <div class="header-bottom-buttons">
+        <div class="header-text__buttons">
             <button class="uk-button uk-button-default user-button user-button_m">календарь
                 фотосессий
             </button>
@@ -53,7 +51,6 @@
     </div>
     <div class="info-block-img"></div>
 </div>
-<div class="rectangle"></div>
 <div class="portfolio-block">
     <div class="portfolio-block-menu">
         <h1>Портфолио</h1>
@@ -83,28 +80,28 @@
     <div class="favorite-block-slider">
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
             <ul class="uk-slider-items uk-grid">
-                <li class="uk-width-3-4">
+                <li class="uk-width-2-3">
                     <div class="uk-panel">
                         <img src="../tests/assets/images/center-slide.jpg" alt="center-slide">
 
                     </div>
                 </li>
-                <li class="uk-width-3-4">
+                <li class="uk-width-2-3">
                     <div class="uk-panel">
                         <img src="../tests/assets/images/center-slide.jpg" alt="center-slide">
                     </div>
                 </li>
-                <li class="uk-width-3-4">
+                <li class="uk-width-2-3">
                     <div class="uk-panel">
                         <img src="../tests/assets/images/center-slide.jpg" alt="center-slide">
                     </div>
                 </li>
+
             </ul>
             <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
                uk-slider-item="previous"></a>
             <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
                uk-slider-item="next"></a>
-
         </div>
     </div>
 </div>
