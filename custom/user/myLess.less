@@ -252,15 +252,39 @@
   &__gallery {
     background-color: #FFFFFF;
     width: 1088px;
-    height: 645px;
-
-    & > div {
-      width: 340px;
-      height: 303px;
-      border-radius: 7px;
-
-    }
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
+}
+
+.gallery__item {
+  width: 340px;
+  height: 303px;
+  border-radius: 7px;
+
+  &_t {
+    margin: 15px 0 15px 15px;
+  }
+
+  &_b {
+    margin: 0 0 15px 15px;
+  }
+
+  &_r {
+    margin: 15px 15px 15px 15px;
+  }
+
+  &_c {
+    margin: 0 15px 15px 15px;
+  }
+
+  & > img {
+    height: 100%;
+    width: 100%;
+  }
+
 }
 
 .favorite-block {
