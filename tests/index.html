@@ -13,7 +13,7 @@
         <div class="header-top__logo"><a href="#"><span>MK</span></a></div>
         <nav class="main-menu">
             <ul>
-                <li><a href="#" class="main-menu__link"></a>портфолио</li>
+                <li><a href="#" class="main-menu__link"></a>галерея</li>
                 <li><a href="#" class="main-menu__link"></a>календарь</li>
                 <li><a href="#" class="main-menu__link"></a>цены</li>
                 <li><a href="#" class="main-menu__link"></a>контакты</li>
@@ -29,12 +29,12 @@
             <button class="uk-button uk-button-default user-button user-button_m">календарь
                 фотосессий
             </button>
-            <button class="uk-button uk-button-default user-button">мои контакты</button>
+            <button class="uk-button uk-button-default user-button user-button_b">мои контакты</button>
         </div>
     </div>
 </header>
 <div class="info-block">
-    <div class="info-block-article">
+    <div class="info-block__article">
         <article class="uk-article">
             <h1 class="uk-article-title">Привет! Меня зовут Марина.
                 Я буду рада стать Вашим
@@ -49,27 +49,27 @@
             </p>
         </article>
     </div>
-    <div class="info-block-img"></div>
+    <div class="info-block__img"></div>
 </div>
 <div class="portfolio-block">
-    <div class="portfolio-block-menu">
+    <nav class="portfolio-block__menu">
         <h1>Портфолио</h1>
-        <ul>
-            <li>Свадьба</li>
-            <li>Семья</li>
-            <li>Детки</li>
-            <li>Портрет</li>
-            <li>Природа</li>
-            <li>Девушки</li>
+        <ul uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
+            <li><a href="#"></a>Свадьба</li>
+            <li><a href="#"></a>Семья</li>
+            <li><a href="#"></a>Детки</li>
+            <li><a href="#"></a>Портрет</li>
+            <li><a href="#"></a>Природа</li>
+            <li><a href="#"></a>Девушки</li>
         </ul>
-    </div>
-    <div class="portfolio-block-gallery uk-grid-small" uk-grid>
-        <img src="../tests/assets/images/couple.jpg" alt="couple">
-        <img src="../tests/assets/images/family.jpg" alt="family">
-        <img src="../tests/assets/images/kid.jpg" alt="kid">
-        <img src="../tests/assets/images/girl.jpg" alt="girl">
-        <img src="../tests/assets/images/nature.jpg" alt="nature">
-        <img src="../tests/assets/images/portret.jpg" alt="portret">
+    </nav>
+    <div class="portfolio-block__gallery" uk-grid>
+        <div><img src="../tests/assets/images/couple.jpg" alt="couple"></div>
+        <div><img src="../tests/assets/images/family.jpg" alt="family"></div>
+        <div><img src="../tests/assets/images/kid.jpg" alt="kid"></div>
+        <div><img src="../tests/assets/images/girl.jpg" alt="girl"></div>
+        <div><img src="../tests/assets/images/nature.jpg" alt="nature"></div>
+        <div><img src="../tests/assets/images/portret.jpg" alt="portret"></div>
     </div>
 
 </div>
@@ -123,7 +123,7 @@
             <button class="uk-button uk-button-default user-button user-button_n">
                 Бронировать дату
             </button>
-            <button class="uk-button uk-button-default user-button">Заказать звонок</button>
+            <button class="uk-button uk-button-default user-button user-button_w">Заказать звонок</button>
         </div>
         <div class="social">
             <a href="#"><img src="../tests/assets/images/telegram%201.png" alt="telegram"></a>
