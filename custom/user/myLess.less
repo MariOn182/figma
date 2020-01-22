@@ -60,6 +60,7 @@
 
 .header {
   height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -72,6 +73,7 @@
   &-top {
     height: 104px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
 
@@ -143,8 +145,10 @@
   margin-right: 159px;
   color: #DBD9D9;
 
+
   & > ul {
     display: flex;
+
 
     & > li {
       cursor: pointer;
@@ -178,6 +182,7 @@
   display: flex;
   justify-content: center;
   font-family: 'PT Sans', sans-serif;
+
 
   &__article {
     width: 699px;
@@ -221,7 +226,6 @@
 
   &__menu {
 
-
     & > h1 {
       color: #444343;
       margin-top: 80px;
@@ -231,6 +235,9 @@
     & > ul {
       display: flex;
       margin-bottom: 40px;
+      @media (max-width: 870px) {
+        flex-direction: column;
+      }
     }
 
     & > ul > li {
@@ -258,6 +265,7 @@
     justify-content: space-between;
   }
 }
+
 
 .gallery__item {
   width: 340px;
