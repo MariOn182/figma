@@ -19,11 +19,30 @@
                 <li><a href="#" class="main-menu__link"></a>контакты</li>
             </ul>
         </nav>
+        <div class="offcanvas-trigger">
+            <a href="#offcanvas-usage" uk-toggle><span uk-icon="icon: menu; ratio: 3"></span></a>
+            <div id="offcanvas-usage" uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <nav class="offcanvas-menu">
+                        <ul>
+                            <li><a href="#" class="main-menu__link"></a>галерея</li>
+                            <hr class="uk-divider-small">
+                            <li><a href="#" class="main-menu__link"></a>календарь</li>
+                            <hr class="uk-divider-small">
+                            <li><a href="#" class="main-menu__link"></a>цены</li>
+                            <hr class="uk-divider-small">
+                            <li><a href="#" class="main-menu__link"></a>контакты</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="header-text">
         <div class="header-text__title">
             <h1>Марина Кобара</h1>
-            <span>мульти-концепт-фотограф</span>
+            <span>Концепт-фотограф</span>
         </div>
         <div class="header-text__buttons">
             <button class="uk-button uk-button-default user-button user-button_m">календарь
@@ -55,6 +74,7 @@
     <nav class="portfolio-block__menu">
         <h1>Портфолио</h1>
         <ul class="uk-subnav" uk-switcher>
+            <li><a href="#">Главная</a></li>
             <li><a href="#">Свадьба</a></li>
             <li><a href="#">Семья</a></li>
             <li><a href="#">Детки</a></li>
@@ -64,22 +84,92 @@
         </ul>
 
         <ul class="uk-switcher uk-margin">
-            <li>Hello!</li>
-            <li>Hello again!</li>
-            <li>Bazinga!</li>
-            <li>Hello!</li>
-            <li>Hello again!</li>
-            <li>Bazinga!</li>
+            <div class="portfolio-block__gallery">
+                <div class="gallery__item gallery__item_t"><img src="../tests/assets/images/family.jpg" alt="family">
+                </div>
+                <div class="gallery__item gallery__item_t"><img src="../tests/assets/images/wedding.jpg" alt="wedding">
+                </div>
+                <div class="gallery__item gallery__item_r"><img src="../tests/assets/images/kid.jpg" alt="kid"></div>
+                <div class="gallery__item gallery__item_b"><img src="../tests/assets/images/girl.jpg" alt="girl"></div>
+                <div class="gallery__item gallery__item_b"><img src="../tests/assets/images/nature.jpg" alt="nature">
+                </div>
+                <div class="gallery__item gallery__item_c"><img src="../tests/assets/images/portret.jpg" alt="portret">
+                </div>
+            </div>
+            <div class="portfolio-block__gallery">
+                <div class="gallery__item gallery__item_t"><img src="../tests/assets/images/wedding.jpg" alt="wedding">
+                </div>
+                <div class="gallery__item gallery__item_t"><img src="../tests/assets/images/wedding.jpg" alt="wedding">
+                </div>
+                <div class="gallery__item gallery__item_r"><img src="../tests/assets/images/wedding.jpg" alt="wedding">
+                </div>
+                <div class="gallery__item gallery__item_b"><img src="../tests/assets/images/wedding.jpg" alt="wedding">
+                </div>
+                <div class="gallery__item gallery__item_b"><img src="../tests/assets/images/wedding.jpg" alt="wedding">
+                </div>
+                <div class="gallery__item gallery__item_c"><img src="../tests/assets/images/wedding.jpg" alt="wedding">
+                </div>
+            </div>
+            <div class="portfolio-block__gallery">
+                <div class="gallery__item gallery__item_t"><img src="../tests/assets/images/family.jpg" alt="family">
+                </div>
+                <div class="gallery__item gallery__item_t"><img src="../tests/assets/images/family.jpg" alt="family">
+                </div>
+                <div class="gallery__item gallery__item_t"><img src="../tests/assets/images/family.jpg" alt="family">
+                </div>
+                <div class="gallery__item gallery__item_t"><img src="../tests/assets/images/family.jpg" alt="family">
+                </div>
+                <div class="gallery__item gallery__item_t"><img src="../tests/assets/images/family.jpg" alt="family">
+                </div>
+                <div class="gallery__item gallery__item_t"><img src="../tests/assets/images/family.jpg" alt="family">
+                </div>
+            </div>
+            <div class="portfolio-block__gallery">
+                <div class="gallery__item gallery__item_r"><img src="../tests/assets/images/kid.jpg" alt="kid"></div>
+                <div class="gallery__item gallery__item_r"><img src="../tests/assets/images/kid.jpg" alt="kid"></div>
+                <div class="gallery__item gallery__item_r"><img src="../tests/assets/images/kid.jpg" alt="kid"></div>
+                <div class="gallery__item gallery__item_r"><img src="../tests/assets/images/kid.jpg" alt="kid"></div>
+                <div class="gallery__item gallery__item_r"><img src="../tests/assets/images/kid.jpg" alt="kid"></div>
+                <div class="gallery__item gallery__item_r"><img src="../tests/assets/images/kid.jpg" alt="kid"></div>
+            </div>
+            <div class="portfolio-block__gallery">
+                <div class="gallery__item gallery__item_b"><img src="../tests/assets/images/girl.jpg" alt="girl"></div>
+                <div class="gallery__item gallery__item_b"><img src="../tests/assets/images/girl.jpg" alt="girl"></div>
+                <div class="gallery__item gallery__item_b"><img src="../tests/assets/images/girl.jpg" alt="girl"></div>
+                <div class="gallery__item gallery__item_b"><img src="../tests/assets/images/girl.jpg" alt="girl"></div>
+                <div class="gallery__item gallery__item_b"><img src="../tests/assets/images/girl.jpg" alt="girl"></div>
+                <div class="gallery__item gallery__item_b"><img src="../tests/assets/images/girl.jpg" alt="girl"></div>
+            </div>
+            <div class="portfolio-block__gallery">
+                <div class="gallery__item gallery__item_b"><img src="../tests/assets/images/nature.jpg" alt="nature">
+                </div>
+                <div class="gallery__item gallery__item_b"><img src="../tests/assets/images/nature.jpg" alt="nature">
+                </div>
+                <div class="gallery__item gallery__item_b"><img src="../tests/assets/images/nature.jpg" alt="nature">
+                </div>
+                <div class="gallery__item gallery__item_b"><img src="../tests/assets/images/nature.jpg" alt="nature">
+                </div>
+                <div class="gallery__item gallery__item_b"><img src="../tests/assets/images/nature.jpg" alt="nature">
+                </div>
+                <div class="gallery__item gallery__item_b"><img src="../tests/assets/images/nature.jpg" alt="nature">
+                </div>
+            </div>
+            <div class="portfolio-block__gallery">
+                <div class="gallery__item gallery__item_c"><img src="../tests/assets/images/portret.jpg" alt="portret">
+                </div>
+                <div class="gallery__item gallery__item_c"><img src="../tests/assets/images/portret.jpg" alt="portret">
+                </div>
+                <div class="gallery__item gallery__item_c"><img src="../tests/assets/images/portret.jpg" alt="portret">
+                </div>
+                <div class="gallery__item gallery__item_c"><img src="../tests/assets/images/portret.jpg" alt="portret">
+                </div>
+                <div class="gallery__item gallery__item_c"><img src="../tests/assets/images/portret.jpg" alt="portret">
+                </div>
+                <div class="gallery__item gallery__item_c"><img src="../tests/assets/images/portret.jpg" alt="portret">
+                </div>
+            </div>
         </ul>
     </nav>
-    <div class="portfolio-block__gallery">
-        <div class="gallery__item gallery__item_t"><img src="../tests/assets/images/couple.jpg" alt="couple"></div>
-        <div class="gallery__item gallery__item_t"><img src="../tests/assets/images/family.jpg" alt="family"></div>
-        <div class="gallery__item gallery__item_r"><img src="../tests/assets/images/kid.jpg" alt="kid"></div>
-        <div class="gallery__item gallery__item_b"><img src="../tests/assets/images/girl.jpg" alt="girl"></div>
-        <div class="gallery__item gallery__item_b"><img src="../tests/assets/images/nature.jpg" alt="nature"></div>
-        <div class="gallery__item gallery__item_c"><img src="../tests/assets/images/portret.jpg" alt="portret"></div>
-    </div>
 
 </div>
 <div class="favorite-block">
@@ -90,6 +180,11 @@
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true"
              style="height: inherit">
             <ul class="uk-slider-items uk-grid-small">
+                <li class="uk-width-2-3">
+                    <div class="uk-panel">
+                        <img src="../tests/assets/images/center-slide.jpg" alt="center-slide">
+                    </div>
+                </li>
                 <li class="uk-width-2-3">
                     <div class="uk-panel">
                         <img src="../tests/assets/images/center-slide.jpg" alt="center-slide">

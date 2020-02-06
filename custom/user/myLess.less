@@ -77,6 +77,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
+    @media (max-width: 840px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+    }
 
     & > div {
       margin-top: 48px;
@@ -91,10 +96,7 @@
       font-size: 49px;
       line-height: 56px;
       @media (max-width: 820px ) {
-        margin-left: 90px;
-      }
-      @media (max-width: 620px ) {
-        margin-left: 50px;
+        margin-left: 0;
       }
 
       & > a {
@@ -112,6 +114,7 @@
     align-items: center;
     margin-bottom: 50px;
 
+
     &__title {
       display: flex;
       flex-direction: column;
@@ -126,6 +129,9 @@
         font-weight: normal;
         font-size: 61px;
         line-height: 67px;
+        @media (max-width: 450px) {
+          font-size: 41px;
+        }
       }
 
       & > span {
@@ -134,18 +140,33 @@
         font-weight: normal;
         font-size: 23px;
         line-height: 30px;
+        @media (max-width: 450px) {
+          font-size: 18px;
+        }
       }
-
     }
 
+    &__buttons {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      @media (max-width: 450px) {
+        flex-direction: column;
+      }
 
+      & > button {
+        margin-bottom: 5px;
+      }
+    }
   }
 }
 
 .main-menu {
   margin-right: 159px;
   color: #DBD9D9;
-
+  @media (max-width: 840px) {
+    display: none;
+  }
 
   & > ul {
     display: flex;
@@ -171,10 +192,40 @@
 
   &__link {
     margin-right: 20px;
-
-
   }
 }
+
+.offcanvas-menu {
+  color: #DBD9D9;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 25px;
+
+  & > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    & > li {
+      cursor: pointer;
+    }
+  }
+}
+
+.offcanvas-trigger {
+  @media (max-width: 1920px) and (min-width: 840px) {
+    display: none;
+  }
+
+  & > a {
+    color: #DBD9D9;
+    text-decoration: none;
+  }
+
+}
+
 
 .info-block {
   height: 640px;
@@ -206,7 +257,7 @@
 }
 
 .portfolio-block {
-  height: 992px;
+  padding: 78px 176px 57px;
   background: url("../../tests/assets/images/portfolio-block-fon.jpg") no-repeat;
   background-size: cover;
   display: flex;
@@ -214,6 +265,7 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  overflow: hidden;
 
   &:before {
     content: '';
@@ -304,6 +356,7 @@
   padding-top: 50px;
   height: 770px;
   background-color: #FFFFFF;
+  overflow: hidden;
 
   &:before {
     content: '';
