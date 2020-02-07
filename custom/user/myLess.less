@@ -57,6 +57,11 @@
 
 }
 
+#user {
+  width: 196px;
+  height: 40px;
+}
+
 .header {
   height: 100vh;
   width: 100%;
@@ -471,7 +476,7 @@
       padding: 90px 238px 21px;
     }
     @media (max-width: 768px) {
-      padding: 20px 238px 21px;
+      padding: 20px 180px 21px;
     }
     @media (max-width: 425px) {
       padding: 20px 20px 21px;
@@ -525,12 +530,17 @@
   height: 74.7px;
   background: #DDDADA;
   padding-top: 22.58px;
-
+  color: #444343;
 
   & > p {
-    color: #444343;
+
     @media (max-width: 425px) {
       font-size: 13px;
+    }
+
+    & > a {
+      margin-left: 5px;
+      color: #444343;
     }
   }
 }

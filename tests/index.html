@@ -10,7 +10,20 @@
 <body>
 <header class="header">
     <div class="header-top">
-        <div class="header-top__logo"><a href="#"><span>MK</span></a></div>
+        <div class="header-top__logo"><a href="#modal-example" uk-toggle><span>MK</span></a></div>
+        <div id="modal-example" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+                <h2 class="uk-modal-title">МК</h2>
+                <form>
+                    <p>Хотите узнавать превым о скидках и акциях на мои фотосессии?
+                        Оставьте свой e-mail</p>
+                    <input id="user" value="e-mail">
+                    <p class="uk-text-right">
+                        <button class="uk-button uk-button-primary" type="button">Отправить</button>
+                    </p>
+                </form>
+            </div>
+        </div>
         <nav class="main-menu">
             <ul>
                 <li><a href="#" class="main-menu__link"></a>галерея</li>
@@ -171,7 +184,7 @@
         </ul>
     </nav>
 
-</div>--!>
+</div><--!>
 <div class="favorite-block">
     <div class="favorite-block-header">
         <h1>Избранные фото</h1>
@@ -238,7 +251,7 @@
         </div>
     </div>
     <div class="copyright">
-        <p>© 2020 Фотограф Марина Кобара +7 (999) 666-55-88</p>
+        <p>© 2020 Фотограф Марина Кобара<a href="tel:+79996665588">+7(999)666-55-88</a></p>
     </div>
 </footer>
 </body>
