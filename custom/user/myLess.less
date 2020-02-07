@@ -305,14 +305,8 @@
 }
 
 .portfolio-block {
-  padding: 78px 176px 57px;
-  background: url("../../tests/assets/images/portfolio-block-fon.jpg") no-repeat;
-  background-size: cover;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  text-align: center;
   overflow: hidden;
 
   &:before {
@@ -322,49 +316,51 @@
     height: 100px;
     background: #FFFFFF;
     transform: rotate(-45deg);
-    margin: -120px auto 0px;
+    margin: -80px auto 0px;
   }
 
-  &__menu {
-
-    & > h1 {
-      color: #444343;
-      margin-top: 80px;
-      margin-bottom: 74px;
-    }
-
-    & > ul {
-      display: flex;
-      margin-bottom: 40px;
-      @media (max-width: 870px) {
-        flex-direction: column;
-      }
-    }
-
-    & > ul > li {
-      font-family: 'Roboto Mono', monospace;
-      font-style: italic;
-      font-weight: 300;
-      font-size: 24px;
-      line-height: 104.6%;
-      color: #000000;
-      margin-right: 35px;
-      cursor: pointer;
-
-      &:hover {
-        font-weight: 500;
-      }
-    }
-  }
-
-  &__gallery {
-    background-color: #FFFFFF;
-    width: 1088px;
-    height: 650px;
+  &__item {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
+
+  &-left-side {
+    width: 40%;
+    padding: 0 155px 0 119px;
+    text-align: center;
+    background: #EDEDED;
+
+    & > h4 {
+      font-family: 'PT Sans', sans-serif;
+      color: #000;
+      padding-top: 208px;
+    }
+  }
+
+  &-right-side {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background: #B5B5B5;
+
+    &_b {
+      padding-bottom: 116px;
+    }
+  }
+
+  &-gallery {
+    display: flex;
+
+    &__item {
+      padding: 46px 19px 0;
+    }
+  }
+
+  &-dots {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+  }
+
 }
 
 
