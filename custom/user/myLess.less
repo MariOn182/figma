@@ -328,11 +328,34 @@
     padding: 0 155px 0 119px;
     text-align: center;
     background: #EDEDED;
+    @media (max-width: 1024px) {
+      font-size: 13px;
+      padding: 0 55px 0 19px;
+    }
+
+    & > hr {
+      @media (max-width: 425px) {
+        display: none;
+      }
+    }
 
     & > h4 {
       font-family: 'PT Sans', sans-serif;
       color: #000;
       padding-top: 154px;
+      @media (max-width: 1024px) {
+        padding-top: 54px;
+      }
+      @media (max-width: 425px) {
+        font-size: 15px;
+        padding-top: 25px;
+      }
+    }
+
+    & > p {
+      @media (max-width: 425px) {
+        display: none;
+      }
     }
   }
 
@@ -344,6 +367,9 @@
 
     &_b {
       padding-bottom: 45px;
+      @media (max-width: 425px) {
+        padding-bottom: 0;
+      }
     }
   }
 
@@ -352,6 +378,9 @@
 
     &__item {
       padding: 46px 19px 0;
+      @media (max-width: 425px) {
+        padding: 0;
+      }
     }
   }
 
@@ -359,6 +388,9 @@
     margin-top: 48px;
     display: flex;
     justify-content: center;
+    @media (max-width: 425px) {
+      display: none;
+    }
   }
 
 }
