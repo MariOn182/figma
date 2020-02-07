@@ -156,6 +156,10 @@
 
       & > button {
         margin-bottom: 5px;
+        @media (max-width: 425px) {
+          margin-right: 0;
+
+        }
       }
     }
   }
@@ -233,13 +237,16 @@
   display: flex;
   justify-content: center;
   font-family: 'PT Sans', sans-serif;
-  @media (max-width: 1120px) {
-    flex-direction: row-reverse;
+  @media (max-width: 1024px) {
+    flex-direction: column-reverse;
+    padding: 40px 5px;
+  }
+  @media (max-width: 750px) {
+
   }
 
 
   &__article {
-    width: 699px;
     margin-right: 98px;
     font-size: 25px;
     line-height: 137.6%;
@@ -249,12 +256,13 @@
     }
     @media (max-width: 840px) {
       font-size: 15px;
-      margin-right: 0;
+      margin: 15px;
+      text-align: center;
     }
     @media (max-width: 640px) {
       font-size: 14px;
-      margin-right: 0;
     }
+
 
     & > article > h1 {
       margin-bottom: 0;
@@ -275,11 +283,12 @@
     background: url("../../tests/assets/images/master.jpg") no-repeat;
     background-size: contain;
     @media (max-width: 1120px) {
-      border-radius: 20px;
-      width: 240px;
+      align-self: center;
+      width: 200px;
       height: 200px;
       margin-top: 20px;
-      margin-right: 15px;
+      background-size: cover;
+      margin-bottom: 10px;
     }
 
   }
@@ -453,15 +462,19 @@
 }
 
 .footer {
-  height: 501px;
   text-align: center;
-  color: #FFFFFF;
+  background: #B5B5B5;
 
 
   &-text {
-    padding-top: 70px;
-    height: 426px;
-    background: #B5B5B5;
+    padding: 90px 438px 21px;
+    @media (max-width: 1024px) {
+      padding: 90px 238px 21px;
+    }
+    @media (max-width: 425px) {
+      padding: 90px 20px 21px;
+    }
+
 
     &__title {
       display: flex;
@@ -478,8 +491,14 @@
       }
     }
 
-    &-buttons {
-      margin-bottom: 75px;
+    &__buttons {
+
+      & > button {
+        @media (max-width: 768px) {
+          margin-right: 0;
+          margin-bottom: 5px;
+        }
+      }
     }
 
 
@@ -489,8 +508,11 @@
 .social {
   margin-top: 69.62px;
 
-  & > img {
+  & > a > img {
     margin-right: 10px;
+    @media (max-width: 768px) {
+      width: 30px;
+    }
   }
 }
 
@@ -499,8 +521,12 @@
   background: #DDDADA;
   padding-top: 22.58px;
 
+
   & > p {
     color: #444343;
+    @media (max-width: 425px) {
+      font-size: 13px;
+    }
   }
 }
 
