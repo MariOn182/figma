@@ -435,17 +435,18 @@
 }
 
 .works-block {
-  padding-top: 74px;
   background-color: #FFFFFF;
-  height: 640px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 10px;
-  margin-top: 130px;
 
   &-info {
+    padding: 78px 232px;
     text-align: center;
+    @media (max-width: 425px) {
+      padding: 0 20px;
+    }
 
     & > h1, h2 {
       margin: 0;
