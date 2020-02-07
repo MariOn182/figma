@@ -601,15 +601,26 @@
 }
 
 .copyright {
-  height: 74.7px;
+  padding: 26px 227px 10px;
   background: #DDDADA;
-  padding-top: 22.58px;
   color: #444343;
+  @media (max-width: 768px) {
+    padding: 5px 27px 5px;
+    font-size: 13px;
+  }
+  @media (max-width: 320px) {
+    padding: 5px 17px 5px;
+  }
 
   & > p {
-
+    @media (max-width: 768px) {
+      margin: 0;
+    }
     @media (max-width: 425px) {
       font-size: 13px;
+    }
+    @media (max-width: 320px) {
+      font-size: 11px;
     }
 
     & > a {
