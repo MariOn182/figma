@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>marina-figma</title>
+    <script src="../tests/js/test.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class="header-top">
+        <div class="header-top__logo"><a href="#modal-example" uk-toggle><span>MK</span></a></div>
+        <div id="modal-example" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body modal-window">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div><h2 class="uk-modal-title">МК</h2></div>
+                <form>
+                    <p>Хотите узнавать первым о скидках и акциях на мои фотосессии?
+                        Оставьте свой e-mail.</p>
+                    <input class="modal-window__field" value="e-mail">
+                    <p class="uk-text-right">
+                        <button class="uk-button" type="button">Отправить</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="#" class="main-menu__link"></a>галерея</li>
+                <li><a href="#" class="main-menu__link"></a>календарь</li>
+                <li><a href="#" class="main-menu__link"></a>цены</li>
+                <li><a href="#" class="main-menu__link"></a>контакты</li>
+            </ul>
+        </nav>
+        <div class="offcanvas-trigger">
+            <a href="#offcanvas-usage" uk-toggle><span uk-icon="icon: menu; ratio: 2.5"></span></a>
+            <div id="offcanvas-usage" uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <nav class="offcanvas-menu">
+                        <ul>
+                            <li><a href="#" class="main-menu__link"></a>галерея</li>
+                            <hr class="uk-divider-small">
+                            <li><a href="#" class="main-menu__link"></a>календарь</li>
+                            <hr class="uk-divider-small">
+                            <li><a href="#" class="main-menu__link"></a>цены</li>
+                            <hr class="uk-divider-small">
+                            <li><a href="#" class="main-menu__link"></a>контакты</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-text">
+        <div class="header-text__title">
+            <h1>Марина Кобара</h1>
+            <span>Концепт-фотограф</span>
+        </div>
+        <div class="header-text__buttons">
+            <button class="uk-button uk-button-default user-button user-button_m">календарь
+                фотосессий
+            </button>
+            <button class="uk-button uk-button-default user-button user-button_b">мои контакты</button>
+        </div>
+    </div>
+</header>
+<div class="info-block">
+    <div class="info-block__article">
+        <article class="uk-article">
+            <h1 class="uk-article-title">Привет! Меня зовут Марина.</h1>
+            <h1 class="uk-article-title">Я буду рада стать Вашим
+                фотографом.</h1>
+            <p>Жена, мама, фотограф. Курсы фотографии в колледже
+                превратили фотографию в моё страстное увлечение
+                и жизненный путь.
+            </p>
+            <p>Уникальность фотографии заключена в том, что это сотворчество художника и природы, это всегда игра для
+                двоих. В определенных случаях фотография способна
+                к фантазии и вымыслу.
+            </p>
+        </article>
+    </div>
+    <div class="info-block__img"></div>
+</div>
+<div class="portfolio-block">
+    <div class="portfolio-block__item">
+        <div class="portfolio-block-left-side">
+            <h4>Свадебная съемка</h4>
+            <hr>
+            <p>Я буду рада сделать вам лучшие снимки самого прекрасного торжества</p>
+        </div>
+        <div class="portfolio-block-right-side">
+            <div class="portfolio-block-gallery">
+                <div class="portfolio-block-gallery__item"><img src="../tests/assets/images/wedding1.jpg"
+                                                                alt="wedding1"></div>
+                <div class="portfolio-block-gallery__item"><img src="../tests/assets/images/wedding2.jpg"
+                                                                alt="wedding2"></div>
+                <div class="portfolio-block-gallery__item"><img src="../tests/assets/images/wedding3.jpg"
+                                                                alt="wedding3"></div>
+            </div>
+            <div class="portfolio-block-dots">
+                <ul class="uk-dotnav">
+                    <li class="uk-active"><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-block__item">
+        <div class="portfolio-block-left-side">
+            <h4>Семейная съемка</h4>
+            <hr>
+            <p>С нежностью, любовью и заботой, такой образ будет у ваших фото</p>
+        </div>
+        <div class="portfolio-block-right-side">
+            <div class="portfolio-block-gallery">
+                <div class="portfolio-block-gallery__item"><img src="../tests/assets/images/family1.jpg"
+                                                                alt="family1"></div>
+                <div class="portfolio-block-gallery__item"><img src="../tests/assets/images/family2.jpg"
+                                                                alt="family2"></div>
+                <div class="portfolio-block-gallery__item"><img src="../tests/assets/images/family3.jpg"
+                                                                alt="family3"></div>
+            </div>
+            <div class="portfolio-block-dots">
+                <ul class="uk-dotnav">
+                    <li class="uk-active"><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-block__item">
+        <div class="portfolio-block-left-side">
+            <h4>Детская съемка</h4>
+            <hr>
+            <p>Для самых маленьких. Такой маленький ребенок, а дарит столько счастья.</p>
+        </div>
+        <div class="portfolio-block-right-side">
+            <div class="portfolio-block-gallery">
+                <div class="portfolio-block-gallery__item"><img src="../tests/assets/images/kid1.jpg" alt="kid1">
+                </div>
+                <div class="portfolio-block-gallery__item"><img src="../tests/assets/images/kid2.jpg" alt="kid2">
+                </div>
+                <div class="portfolio-block-gallery__item"><img src="../tests/assets/images/kid3.jpg" alt="kid3">
+                </div>
+            </div>
+            <div class="portfolio-block-dots">
+                <ul class="uk-dotnav">
+                    <li class="uk-active"><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-block__item">
+        <div class="portfolio-block-left-side">
+            <h4>Портретная съемка</h4>
+            <hr>
+            <p>Стильно, современно, профессионально.</p>
+        </div>
+        <div class="portfolio-block-right-side">
+            <div class="portfolio-block-gallery">
+                <div class="portfolio-block-gallery__item"><img src="../tests/assets/images/portrait1.jpg"
+                                                                alt="portrait1">
+                </div>
+                <div class="portfolio-block-gallery__item"><img src="../tests/assets/images/portrait2.jpg"
+                                                                alt="portrait2">
+                </div>
+                <div class="portfolio-block-gallery__item"><img src="../tests/assets/images/portrait3.jpg"
+                                                                alt="portrait3">
+                </div>
+            </div>
+            <div class="portfolio-block-dots">
+                <ul class="uk-dotnav">
+                    <li class="uk-active"><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-block__item">
+        <div class="portfolio-block-left-side">
+            <h4>Пейзажи</h4>
+            <hr>
+            <p>Путешествую и дарю вам мои впечатления в фотоотчетах.</p>
+        </div>
+        <div class="portfolio-block-right-side">
+            <div class="portfolio-block-gallery">
+                <div class="portfolio-block-gallery__item"><img src="../tests/assets/images/nature1.jpg"
+                                                                alt="nature1"></div>
+                <div class="portfolio-block-gallery__item"><img src="../tests/assets/images/nature2.jpg"
+                                                                alt="nature2"></div>
+                <div class="portfolio-block-gallery__item"><img src="../tests/assets/images/nature3.jpg"
+                                                                alt="nature3"></div>
+            </div>
+            <div class="portfolio-block-dots">
+                <ul class="uk-dotnav">
+                    <li class="uk-active"><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-block__item">
+        <div class="portfolio-block-left-side">
+            <h4>Девушки</h4>
+            <hr>
+            <p>Подчеркнуть индивидуальность и расставить акценты, вот задача фотографа</p>
+        </div>
+        <div class="portfolio-block-right-side portfolio-block-right-side_b">
+            <div class="portfolio-block-gallery">
+                <div class="portfolio-block-gallery__item"><img src="../tests/assets/images/girl1.jpg" alt="girl1">
+                </div>
+                <div class="portfolio-block-gallery__item"><img src="../tests/assets/images/girl2.jpg" alt="girl2">
+                </div>
+                <div class="portfolio-block-gallery__item"><img src="../tests/assets/images/girl3.jpg" alt="girl3">
+                </div>
+            </div>
+            <div class="portfolio-block-dots">
+                <ul class="uk-dotnav">
+                    <li class="uk-active"><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="favorite-block">
+    <div class="favorite-block-header">
+        <h1>Избранные фото</h1>
+    </div>
+    <div class="favorite-block-slider">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true"
+             style="height: inherit">
+            <ul class="uk-slider-items uk-grid-small">
+                <li class="uk-width-2-3">
+                    <div class="uk-panel">
+                        <img src="../tests/assets/images/center-slide.jpg" alt="center-slide">
+                    </div>
+                </li>
+                <li class="uk-width-2-3">
+                    <div class="uk-panel">
+                        <img src="../tests/assets/images/center-slide.jpg" alt="center-slide">
+                    </div>
+                </li>
+                <li class="uk-width-2-3">
+                    <div class="uk-panel">
+                        <img src="../tests/assets/images/center-slide.jpg" alt="center-slide">
+                    </div>
+                </li>
+                <li class="uk-width-2-3">
+                    <div class="uk-panel">
+                        <img src="../tests/assets/images/center-slide.jpg" alt="center-slide">
+                    </div>
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+               uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+               uk-slider-item="next"></a>
+        </div>
+    </div>
+</div>
+<div class="works-block">
+    <div class="works-block-info">
+        <h1>Следите за моими работами в Instagram</h1>
+        <h2>@Kobara_photo</h2>
+    </div>
+    <div class="works-block-gallery">
+        <img src="../tests/assets/images/works-block-fon.jpg" alt="works-block-fon">
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer-text">
+        <div class="footer-text__title">
+            <h2>Забронируйте дату съемки!</h2>
+            <span>Заполните форму ниже и я с Вами свяжусь.</span>
+        </div>
+        <div class="footer-text__buttons">
+            <button class="uk-button uk-button-default user-button user-button_n">
+                Бронировать дату
+            </button>
+            <button class="uk-button uk-button-default user-button user-button_w">Заказать звонок</button>
+        </div>
+        <div class="social">
+            <a href="#"><img src="../tests/assets/images/telegram%201.png" alt="telegram"></a>
+            <a href="#"><img src="../tests/assets/images/vk%201.png" alt="vk"></a>
+            <a href="#"><img src="../tests/assets/images/viber%201.png" alt="viber"></a>
+            <a href="#"><img src="../tests/assets/images/instagram%201.png" alt="instagram"></a>
+            <a href="#"><img src="../tests/assets/images/mail%201.png" alt="mail"></a>
+            <a href="#"><img src="../tests/assets/images/fb%201.png" alt="fb"></a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2020 Фотограф Марина Кобара<a href="tel:+79996665588">+7(999)666-55-88</a></p>
+    </div>
+</footer>
+</body>
+</html>
