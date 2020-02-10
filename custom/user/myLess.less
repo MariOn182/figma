@@ -31,7 +31,7 @@
   }
 
   &_b:hover {
-    border: 3px solid rgba(0, 0, 0, 0.82);
+    border: 2px solid rgba(0, 0, 0, 0.82);
   }
 
   &_n {
@@ -380,6 +380,7 @@
     width: 60%;
     background: #B5B5B5;
 
+
     &_b {
       padding-bottom: 45px;
       @media (max-width: 425px) {
@@ -390,6 +391,9 @@
 
   &-gallery {
     display: flex;
+    width: 110%;
+    margin-left: -10%;
+    justify-content: flex-end;
 
     &__item {
       padding: 46px 19px 0;
@@ -410,6 +414,39 @@
 
 }
 
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  padding: 51px 130px 55px;
+  font-family: 'PT Sans', sans-serif;
+
+
+  &-text {
+    text-align: center;
+
+    & > h1 {
+      margin-bottom: 40px;
+    }
+
+    & > h4 {
+      margin-bottom: 82px;
+    }
+  }
+
+  &-gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      margin-right: 20px;
+
+      & > img {
+        width: 329px;
+        height: 535px;
+      }
+    }
+  }
+}
 
 .gallery__item {
   width: 340px;
