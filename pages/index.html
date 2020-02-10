@@ -28,18 +28,28 @@
         <nav class="main-menu">
             <ul>
                 <li><a href="#" class="main-menu__link"></a>галерея</li>
-                <li><a href="#" class="main-menu__link"></a>календарь</li>
-                <li><a href="#" class="main-menu__link"></a>цены</li>
-                <li><a href="#" class="main-menu__link"></a>контакты</li>
+                <li><a href="#" class="main-menu__link"></a>портфолио</li>
+                <div uk-dropdown class="dropdown-list">
+                    <ul class="uk-nav uk-dropdown-nav dropdown-list"
+                    ">
+                    <li><a href="#">Свадебная съемка</a></li>
+                    <li><a href="#">Семейная съемка</a></li>
+                    <li><a href="#">Детская съемка</a></li>
+                    <li><a href="#">Портретная съемка</a></li>
+                    <li><a href="#">Девушки</a></li>
             </ul>
-        </nav>
-        <div class="offcanvas-trigger">
-            <a href="#offcanvas-usage" uk-toggle><span uk-icon="icon: menu; ratio: 2.5"></span></a>
-            <div id="offcanvas-usage" uk-offcanvas="overlay: true">
-                <div class="uk-offcanvas-bar">
-                    <button class="uk-offcanvas-close" type="button" uk-close></button>
-                    <nav class="offcanvas-menu">
-                        <ul>
+    </div>
+    <li><a href="#" class="main-menu__link"></a>услуги и цены</li>
+    <li><a href="#" class="main-menu__link"></a>контакты</li>
+    </ul>
+    </nav>
+    <div class="offcanvas-trigger">
+        <a href="#offcanvas-usage" uk-toggle><span uk-icon="icon: menu; ratio: 2.5"></span></a>
+        <div id="offcanvas-usage" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar">
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                <nav class="offcanvas-menu">
+                    <ul>
                             <li><a href="#" class="main-menu__link"></a>галерея</li>
                             <hr class="uk-divider-small">
                             <li><a href="#" class="main-menu__link"></a>календарь</li>
