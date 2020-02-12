@@ -13,8 +13,8 @@
         <span>MK</span>
     </div>
     <div class="header_page-text">
-        <span>фотограф</span>
         <h1>Марина Кобара</h1>
+        <span>фотограф</span>
     </div>
     <nav class="main-menu">
         <ul>
@@ -53,18 +53,17 @@
                 еще долгие годы. </p>
         </div>
         <div class="application-block-field-form">
-            <form>
-                <input type="text" value="Имя и Фамилия">
-                <input type="text" value="Номер телефона">
-                <input type="text" value="e-mail">
-                <input type="text" value="Тип съёмки">
-            </form>
-            <form>
-                <input type="text" value="Интересующая дата">
-                <input type="text" value="Ваши пожелания">
+            <form method="post">
+                <input type="text" placeholder="Имя и Фамилия">
+                <input type="tel" placeholder="Номер телефона" required>
+                <input type="email" placeholder="e-mail" required>
+                <input type="text" placeholder="Тип съёмки">
+                <input type="date" placeholder="Интересующая дата">
+                <textarea placeholder="Ваши пожелания"></textarea>
+                <button type="submit" class="uk-button uk-button-default user-button user-button_r">ОТПРАВИТЬ ЗАЯВКУ
+                </button>
             </form>
         </div>
-        <button class="uk-button uk-button-default user-button user-button_r">ОТПРАВИТЬ ЗАЯВКУ</button>
     </div>
     <hr>
 </div>
