@@ -270,7 +270,17 @@
 
   & > ul {
     color: #fff;
-    list-style-type: disc;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    & > li:before {
+      content: '';
+      color: #FFFFFF;
+      width: 2px;
+      height: 2px;
+      border-radius: 50px;
+    }
 
 
     & > li > a {
@@ -283,6 +293,7 @@
     & > li > a:hover {
       color: #000000;
     }
+
   }
 }
 
@@ -471,6 +482,7 @@
   &-item {
     display: flex;
     margin-bottom: 45px;
+    justify-content: center;
 
     & > div > img {
       border-radius: 250px;
@@ -781,6 +793,12 @@
 
   &-gallery {
     width: 100%;
+    display: flex;
+    justify-content: center;
+
+    & > img {
+      width: inherit;
+    }
   }
 }
 
