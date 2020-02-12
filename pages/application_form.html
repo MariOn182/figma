@@ -54,12 +54,18 @@
         </div>
         <div class="application-block-field-form">
             <form method="post">
-                <input type="text" placeholder="Имя и Фамилия">
-                <input type="tel" placeholder="Номер телефона" required>
-                <input type="email" placeholder="e-mail" required>
-                <input type="text" placeholder="Тип съёмки">
-                <input type="date" placeholder="Интересующая дата">
-                <textarea placeholder="Ваши пожелания"></textarea>
+                <div class="application-block-form">
+                    <div>
+                        <input type="text" placeholder="Имя и Фамилия">
+                        <input type="tel" placeholder="Номер телефона" required>
+                        <input type="email" placeholder="e-mail" required>
+                        <input type="text" placeholder="Тип съёмки">
+                    </div>
+                    <div>
+                        <input type="date" placeholder="Интересующая дата">
+                        <textarea placeholder="Ваши пожелания" class="application-block-textarea"></textarea>
+                    </div>
+                </div>
                 <button type="submit" class="uk-button uk-button-default user-button user-button_r">ОТПРАВИТЬ ЗАЯВКУ
                 </button>
             </form>
