@@ -5,6 +5,14 @@
   text-decoration: none;
 }
 
+h1, h2 {
+  font-size: 55px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
 .expand {
   position: absolute;
   background: #636363;
@@ -280,15 +288,6 @@
     padding: 0;
     margin: 0;
 
-    & > li:before {
-      content: '';
-      color: #FFFFFF;
-      width: 2px;
-      height: 2px;
-      border-radius: 50px;
-    }
-
-
     & > li > a {
       color: #FFFFFF;
       font-size: 18px;
@@ -299,7 +298,6 @@
     & > li > a:hover {
       color: #000000;
     }
-
   }
 }
 
@@ -380,7 +378,8 @@
     }
 
 
-    & > article > h1 {
+    & > article > h2 {
+      font-size: 55px;
       margin-bottom: 0;
       margin-top: 0;
       @media (max-width: 760px) {
@@ -394,6 +393,8 @@
 
   &__img {
     width: 585px;
+    margin-right: 20px;
+    padding-right: 200px;
     border-radius: 12px;
     background: url("../../tests/assets/images/master.jpg") no-repeat;
     background-size: cover;
@@ -766,7 +767,7 @@
       margin-bottom: 0;
     }
 
-    & > h1 {
+    & > h2 {
       @media (max-width: 760px) {
         font-size: 25px;
       }
@@ -816,11 +817,11 @@
       padding: 0 20px;
     }
 
-    & > h1, h2 {
+    & > h2, h3 {
       margin: 0;
     }
 
-    & > h1 {
+    & > h2 {
       @media (max-width: 760px) {
         font-size: 25px;
       }
@@ -860,12 +861,14 @@
 
 
     &__title {
+      color: #FFFFFF;
       display: flex;
       flex-direction: column;
       margin-bottom: 34px;
 
       & > h2 {
         color: #FFFFFF;
+        font-size: 25px;
         text-transform: uppercase;
         @media (max-width: 760px) {
           font-size: 20px;
@@ -876,7 +879,7 @@
       }
 
       & > span {
-        font-size: 25px;
+        font-size: 20px;
         @media (max-width: 640px) {
           font-size: 15px;
         }
