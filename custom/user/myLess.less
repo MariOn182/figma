@@ -4,6 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+
 .expand {
   position: absolute;
   background: #636363;
@@ -645,10 +646,15 @@
 
   &-gallery {
     display: flex;
-    width: 110%;
-    margin-left: -10%;
+    width: 100%;
     justify-content: flex-end;
     align-items: baseline;
+    padding-left: 20px;
+
+    &_e {
+      width: 110%;
+      margin-left: -10%;
+    }
 
     &__item {
       padding: 46px 19px 0 0;
