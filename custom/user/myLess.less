@@ -657,9 +657,15 @@
     }
 
     &__item {
-      padding: 46px 19px 0 0;
+      display: flex;
+      padding: 46px 0;
+      margin-left: 40px;
       @media (max-width: 425px) {
         padding: 0;
+      }
+
+      & > div {
+        padding-right: 20px;
       }
     }
   }
