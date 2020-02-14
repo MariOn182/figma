@@ -347,7 +347,7 @@ h3 {
 }
 
 .offcanvas-trigger {
-  @media (max-width: 4000px) and (min-width: 840px) {
+  @media (max-width: 5000px) and (min-width: 840px) {
     display: none;
   }
   @media (max-width: 320px) {
@@ -368,7 +368,7 @@ h3 {
 }
 
 .info-block {
-  padding: 114px 0 20px;
+  margin: 114px 30px 20px;
   background: #FFFFFF;
   display: flex;
   justify-content: center;
@@ -380,6 +380,7 @@ h3 {
 
 
   &__article {
+    margin-left: 100px;
     margin-right: 98px;
     font-size: 25px;
     line-height: 137.6%;
@@ -411,13 +412,9 @@ h3 {
     }
   }
 
-  &__img {
-    width: 585px;
-    margin-right: 20px;
-    padding-right: 200px;
+  & > img {
     border-radius: 12px;
-    background: url("../../tests/assets/images/master.jpg") no-repeat;
-    background-size: cover;
+    object-fit: cover;
     @media (max-width: 1120px) {
       align-self: center;
       width: 200px;
