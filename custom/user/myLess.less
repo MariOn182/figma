@@ -648,39 +648,29 @@ h3 {
 
   &-gallery {
     display: flex;
-    width: 100%;
     justify-content: flex-end;
-    align-items: baseline;
-    padding-left: 20px;
+    width: 110%;
+    height: 260px;
+    margin-top: 40px;
+    margin-left: -10%;
 
-    &_e {
-      width: 110%;
-      margin-left: -10%;
-    }
+    &__image {
+      width: 199px;
+      height: 260px;
+      flex-basis: 30%;
+      padding-right: 20px;
 
-    &__item {
-      display: flex;
-      padding: 46px 0;
-      margin-left: 40px;
-      @media (max-width: 425px) {
-        padding: 0;
+      &_l {
+        margin: 0;
+        flex-basis: 40%;
       }
 
-      & > div {
-        padding-right: 20px;
+      & > a > img {
+        height: 100%;
+        object-fit: cover;
       }
     }
   }
-
-  &-dots {
-    margin-top: 48px;
-    display: flex;
-    justify-content: center;
-    @media (max-width: 425px) {
-      display: none;
-    }
-  }
-
 }
 
 .portfolio {
@@ -708,7 +698,7 @@ h3 {
     justify-content: space-between;
 
     &__item {
-
+      flex-basis: 30%;
 
       & > img {
         object-fit: cover;
