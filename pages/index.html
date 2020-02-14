@@ -11,21 +11,7 @@
 <header class="header ">
     <div class="uk-container uk-container-xlarge">
         <div class="header-top">
-            <div class="header-top__logo"><a href="#modal-example" uk-toggle><span>MK</span></a></div>
-            <div id="modal-example" uk-modal>
-                <div class="uk-modal-dialog uk-modal-body modal-window">
-                    <button class="uk-modal-close-default" type="button" uk-close></button>
-                    <div><h2 class="uk-modal-title">MK</h2></div>
-                    <form>
-                        <p>Хотите узнавать первым о скидках и акциях на мои фотосессии?
-                            Оставьте свой e-mail.</p>
-                        <input class="modal-window__field" value="e-mail">
-                        <p class="uk-text-right">
-                            <button class="uk-button" type="button">Отправить</button>
-                        </p>
-                    </form>
-                </div>
-            </div>
+            <div class="header-top__logo"><a href="#"><span>MK</span></a></div>
             <nav class="main-menu">
                 <ul>
                     <li><a href="./portfolio.html" class="main-menu__link">галерея</a></li>
@@ -416,7 +402,23 @@
             <button class="uk-button uk-button-default user-button user-button_n">
                 Бронировать дату
             </button>
-            <button class="uk-button uk-button-default user-button user-button_w">Заказать звонок</button>
+            <button class="uk-button uk-button-default user-button user-button_w" uk-toggle="target: #modal-example">
+                Заказать звонок
+            </button>
+            <div id="modal-example" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body modal-window">
+                    <button class="uk-modal-close-default" type="button" uk-close></button>
+                    <div><h2 class="uk-modal-title">MK</h2></div>
+                    <form>
+                        <p>Хотите узнавать первым о скидках и акциях на мои фотосессии?
+                            Оставьте свой e-mail.</p>
+                        <input class="modal-window__field" value="e-mail">
+                        <p class="uk-text-right">
+                            <button class="uk-button" type="button">Отправить</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
         </div>
         <div class="social">
             <a href="#"><img src="../tests/assets/images/telegram%201.png" alt="telegram"></a>
