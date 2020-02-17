@@ -17,6 +17,7 @@ h3 {
   background: #636363;
 
   &-main {
+    margin-bottom: 80px;
     color: #fff;
     font-family: 'PT Sans', sans-serif;
     background: url("../../tests/assets/images/main_img.jpg") no-repeat;
@@ -365,9 +366,9 @@ h3 {
 
 }
 
-
 .info {
-  margin: 114px 100px 20px;
+  padding: 0 100px;
+  margin-bottom: 40px;
   background: #FFFFFF;
   display: flex;
   justify-content: center;
@@ -377,8 +378,8 @@ h3 {
     padding: 10px 5px;
   }
 
-
   &__article {
+    padding-right: 100px;
     font-size: 25px;
     line-height: 137.6%;
     @media (max-width: 1120px) {
@@ -508,7 +509,6 @@ h3 {
   }
 }
 
-
 .price {
   padding: 51px 100px 0;
   text-align: center;
@@ -582,37 +582,45 @@ h3 {
   }
 
   &:before {
+    position: absolute;
+    top: 0px;
+    left: calc(40% - 50px);
     content: '';
     display: block;
     width: 100px;
     height: 100px;
     background: #FFFFFF;
     transform: rotate(-45deg);
-    margin: -80px 430px 0px;
     @media (max-width: 415px) {
       display: none;
     }
   }
 
   &:after {
+    position: absolute;
+    top: 0px;
+    left: calc(40% - 50px);
     content: '';
     display: block;
     width: 100px;
     height: 100px;
     background: #ffffff;
     transform: rotate(-45deg);
-    margin: 0 430px;
   }
+
 
   &__item {
     display: flex;
   }
 
-  &-left-side {
+  &-left {
     width: 40%;
-    padding: 0 120px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
     text-align: center;
     background: linear-gradient(-90deg, #F2F2F2 -1.83%, rgba(181, 181, 181, 0) 85.49%);
+
 
     @media (max-width: 1024px) {
       font-size: 13px;
@@ -631,30 +639,27 @@ h3 {
       }
     }
 
+    & > hr {
+      width: 340px;
+      align-self: center;
+      margin: 0;
+    }
+
     & > h4 {
       font-family: 'PT Sans', sans-serif;
       color: #000;
-      padding-top: 154px;
-      @media (max-width: 1024px) {
-        padding-top: 54px;
-      }
-      @media (max-width: 425px) {
-        font-size: 15px;
-        padding-top: 25px;
-      }
-      @media (max-width: 320px) {
-        font-size: 11px;
-      }
     }
 
     & > p {
+      padding: 0 90px;
       @media (max-width: 425px) {
         display: none;
       }
     }
   }
 
-  &-right-side {
+  &-right {
+    padding-right: 100px;
     display: flex;
     flex-direction: column;
     width: 60%;
