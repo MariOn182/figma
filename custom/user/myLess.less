@@ -401,6 +401,7 @@ h3 {
       font-size: 55px;
       margin-bottom: 0;
       margin-top: 0;
+      line-height: 104.6%;
       @media (max-width: 760px) {
         font-size: 25px;
       }
@@ -574,6 +575,7 @@ h3 {
 }
 
 .portfolio-block {
+  position: relative;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -583,7 +585,7 @@ h3 {
 
   &:before {
     position: absolute;
-    top: 1050px;
+    top: 0;
     left: calc(40% - 42px);
     content: '';
     display: block;
@@ -604,7 +606,7 @@ h3 {
     display: block;
     width: 100px;
     height: 100px;
-    background: #ffffff;
+    background: #8d7aff;
     transform: rotate(-45deg);
   }
 
@@ -622,7 +624,7 @@ h3 {
     background: linear-gradient(-90deg, #F2F2F2 -1.83%, rgba(181, 181, 181, 0) 85.49%);
 
     &_b {
-      padding-bottom: 2%;
+      padding-bottom: 4%;
     }
 
     @media (max-width: 1024px) {
@@ -676,7 +678,7 @@ h3 {
 
 
     &_b {
-      padding-bottom: 45px;
+      padding-bottom: 75px;
       @media (max-width: 425px) {
         padding-bottom: 0;
       }
@@ -709,7 +711,7 @@ h3 {
       }
 
       & > a > img {
-        height: 100%;
+        height: fit-content;
         object-fit: cover;
       }
     }
