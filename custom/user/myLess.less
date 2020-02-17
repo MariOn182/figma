@@ -583,13 +583,13 @@ h3 {
 
   &:before {
     position: absolute;
-    top: 0px;
-    left: calc(40% - 50px);
+    top: 1050px;
+    left: calc(40% - 42px);
     content: '';
     display: block;
     width: 100px;
     height: 100px;
-    background: #FFFFFF;
+    background: #ff3252;
     transform: rotate(-45deg);
     @media (max-width: 415px) {
       display: none;
@@ -621,6 +621,9 @@ h3 {
     text-align: center;
     background: linear-gradient(-90deg, #F2F2F2 -1.83%, rgba(181, 181, 181, 0) 85.49%);
 
+    &_b {
+      padding-bottom: 2%;
+    }
 
     @media (max-width: 1024px) {
       font-size: 13px;
@@ -646,11 +649,14 @@ h3 {
     }
 
     & > h4 {
+      font-size: 33px;
       font-family: 'PT Sans', sans-serif;
       color: #000;
     }
 
     & > p {
+      font-size: 25px;
+      line-height: 104.6%;
       padding: 0 90px;
       @media (max-width: 425px) {
         display: none;
@@ -688,17 +694,28 @@ h3 {
     &__image {
       width: 200px;
       height: 260px;
-      flex-basis: 30%;
+      flex-basis: 25%;
+      margin-right: 5%;
 
       &_l {
-        margin: 0;
+        margin-right: 5%;
         flex-basis: 40%;
+      }
+
+      & > a {
+        overflow: hidden;
+        display: block;
+        height: 100%;
       }
 
       & > a > img {
         height: 100%;
         object-fit: cover;
       }
+    }
+
+    &__image:last-child {
+      margin-right: 0;
     }
   }
 }
