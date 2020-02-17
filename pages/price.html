@@ -8,25 +8,26 @@
     <script src="../tests/js/test.js"></script>
 </head>
 <body>
-<div class="expand uk-container-expand"></div>
-<div class="uk-container uk-container-large">
-    <header class="header_page">
-        <div class="header_page-logo">
-            <span>MK</span>
-        </div>
-        <div class="header_page-text">
-            <span>фотограф</span>
-            <h1>Марина Кобара</h1>
-        </div>
-        <nav class="main-menu">
-            <ul>
-                <li><a href="./index.html" class="main-menu__link">главная</a></li>
-                <li><a href="./portfolio.html" class="main-menu__link">портфолио</a></li>
-                <li><a href="./price.html" class="main-menu__link">услуги и цены</a></li>
-                <li><a href="./application_form.html" class="main-menu__link">контакты</a></li>
-            </ul>
-        </nav>
-    </header>
+<div class="expand uk-container-expand">
+    <div class="uk-container uk-container-large">
+        <header class="header_page">
+            <div class="header_page-logo">
+                <span>MK</span>
+            </div>
+            <div class="header_page-text">
+                <span>фотограф</span>
+                <h1>Марина Кобара</h1>
+            </div>
+            <nav class="main-menu main-menu_w">
+                <ul>
+                    <li><a href="./index.html" class="main-menu__link">главная</a></li>
+                    <li><a href="./portfolio.html" class="main-menu__link">портфолио</a></li>
+                    <li><a href="./price.html" class="main-menu__link">услуги и цены</a></li>
+                    <li><a href="./application_form.html" class="main-menu__link">контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
 </div>
 <div class="uk-container uk-container-large">
     <div class="price-block">
@@ -48,10 +49,27 @@
                         100 фотографий в авторской обработке, 20 из них на ваш выбор в детальной ретуши;
                     </p>
                     <p>
-                        Передача снимков путём электронной ссылки; Хранение и восстановление данных в течение 1 года.
+                        Передача снимков пуsfsfsfsfsтём электронной ссылки; Хранение и восстановление данных в течение 1
+                        года.
                     </p>
                 </div>
-                <button class="uk-button uk-button-default user-button user-button_r">ОТПРАВИТЬ ЗАПРОС</button>
+                <button class="uk-button uk-button-default user-button user-button_r"
+                        uk-toggle="target: #modal-example">ОТПРАВИТЬ ЗАПРОС
+                </button>
+                <div id="modal-example" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body modal-window">
+                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                        <div><h2 class="uk-modal-title">MK</h2></div>
+                        <form>
+                            <p>Хотите узнавать первым о скидках и акциях на мои фотосессии?
+                                Оставьте свой e-mail.</p>
+                            <input class="modal-window__field" value="e-mail">
+                            <p class="uk-text-right">
+                                <button class="uk-button" type="button">Отправить</button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
             </div>
             <div>
                 <img src="../tests/assets/images/price2.jpg" alt="price2">
@@ -69,10 +87,26 @@
                         100 фотографий в авторской обработке, 20 из них на ваш выбор в детальной ретуши;
                     </p>
                     <p>
-                        Передача снимков путём электронной ссылки; Хранение и восстановление данных в течение 1 года.
+                        е данных в течение 1 года.
                     </p>
                 </div>
-                <button class="uk-button uk-button-default user-button user-button_r">ОТПРАВИТЬ ЗАПРОС</button>
+                <button class="uk-button uk-button-default user-button user-button_r"
+                        uk-toggle="target: #modal-example">ОТПРАВИТЬ ЗАПРОС
+                </button>
+                <div id="modal-example" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body modal-window">
+                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                        <div><h2 class="uk-modal-title">MK</h2></div>
+                        <form>
+                            <p>Хотите узнавать первым о скидках и акциях на мои фотосессии?
+                                Оставьте свой e-mail.</p>
+                            <input class="modal-window__field" value="e-mail">
+                            <p class="uk-text-right">
+                                <button class="uk-button" type="button">Отправить</button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
             </div>
             <div>
                 <img src="../tests/assets/images/wedding3.jpg" alt="price3">
@@ -93,7 +127,23 @@
                         Передача снимков путём электронной ссылки; Хранение и восстановление данных в течение 1 года.
                     </p>
                 </div>
-                <button class="uk-button uk-button-default user-button user-button_r">ОТПРАВИТЬ ЗАПРОС</button>
+                <button class="uk-button uk-button-default user-button user-button_r"
+                        uk-toggle="target: #modal-example">ОТПРАВИТЬ ЗАПРОС
+                </button>
+                <div id="modal-example" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body modal-window">
+                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                        <div><h2 class="uk-modal-title">MK</h2></div>
+                        <form>
+                            <p>Хотите узнавать первым о скидках и акциях на мои фотосессии?
+                                Оставьте свой e-mail.</p>
+                            <input class="modal-window__field" value="e-mail">
+                            <p class="uk-text-right">
+                                <button class="uk-button" type="button">Отправить</button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
         <p>Если остались вопросы или возникли проблемы с пониманием пакетов услуг, позвоните мне по номеру, указанному в
