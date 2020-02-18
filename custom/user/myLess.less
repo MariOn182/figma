@@ -23,6 +23,9 @@ h3 {
     background: url("../../tests/assets/images/main_img.jpg") no-repeat;
     background-size: cover;
     background-position: top;
+    @media (max-width: 320px) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -379,6 +382,9 @@ h3 {
     flex-direction: column-reverse;
     padding: 10px 5px;
   }
+  @media (max-width: 320px) {
+    margin-bottom: 0;
+  }
 
   &__article {
     padding-right: 100px;
@@ -397,18 +403,31 @@ h3 {
     @media (max-width: 640px) {
       font-size: 14px;
     }
+    @media (max-width: 320px) {
+      margin: 0;
+      padding: 0 40px;
+      text-align: left;
+    }
 
 
     & > article > h2 {
-      font-size: 55px;
       margin-bottom: 0;
       margin-top: 0;
       line-height: 104.6%;
       @media (max-width: 760px) {
         font-size: 25px;
       }
-      @media (max-width: 640px) {
-        font-size: 20px;
+      @media (max-width: 320px) {
+        font-size: 19px;
+        line-height: 108.6%;
+
+      }
+    }
+
+    & > article > p {
+      @media (max-width: 320px) {
+        font-size: 14px;
+        line-height: 131.6%;
       }
     }
   }
@@ -420,9 +439,14 @@ h3 {
       align-self: center;
       width: 200px;
       height: 200px;
-      margin-top: 20px;
       margin-bottom: 10px;
     }
+  }
+}
+
+.hidden-p {
+  @media (max-width: 320px) {
+    display: none;
   }
 }
 
@@ -581,8 +605,8 @@ h3 {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  @media (max-width: 425px) {
-    margin-bottom: 30px;
+  @media (max-width: 320px) {
+    padding: 0 40px;
   }
 
   &:before {
@@ -625,6 +649,14 @@ h3 {
     text-align: center;
     background: linear-gradient(-90deg, #F2F2F2 -1.83%, rgba(181, 181, 181, 0) 85.49%);
 
+    & > img {
+      display: none;
+      @media ( max-width: 320px) {
+        margin-bottom: 15px;
+        display: block;
+      }
+    }
+
     &_b {
       padding-bottom: 4%;
     }
@@ -637,11 +669,12 @@ h3 {
       padding: 0 10px 0 10px;
     }
     @media (max-width: 320px) {
-      padding: 0 5px 0 5px;
+      width: 100%;
+      padding: 30px 10px 0;
     }
 
     & > hr {
-      @media (max-width: 425px) {
+      @media (max-width: 320px) {
         display: none;
       }
     }
@@ -656,14 +689,22 @@ h3 {
       font-size: 33px;
       font-family: 'PT Sans', sans-serif;
       color: #000;
+      @media (max-width: 320px) {
+        font-size: 20px;
+        line-height: 104.6%;;
+        margin-bottom: 15px;
+      }
     }
 
     & > p {
       font-size: 25px;
       line-height: 104.6%;
       padding: 0 90px;
-      @media (max-width: 425px) {
-        display: none;
+      @media (max-width: 320px) {
+        font-size: 14px;
+        line-height: 104.6%;
+        padding: 0;
+        margin: 0;
       }
     }
   }
