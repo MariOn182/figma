@@ -612,28 +612,33 @@ h3 {
   &:before {
     position: absolute;
     top: -90px;
-    left: calc(40% - 50px);
+    left: calc(~"40% - 50px");
     content: '';
     display: block;
     width: 100px;
     height: 100px;
-    background: #ff3252;
+    background: #ffffff;
     transform: rotate(-45deg);
-    @media (max-width: 415px) {
-      display: none;
+    @media (max-width: 320px) {
+      top: -110px;
+      left: calc(~"40% - 30px");
     }
   }
 
   &:after {
     position: absolute;
-    top: 1850px;
-    left: calc(40% - 50px);
+    top: 1860px;
+    left: calc(~"40% - 50px");
     content: '';
     display: block;
     width: 100px;
     height: 100px;
-    background: #8d7aff;
+    background: #ffffff;
     transform: rotate(-45deg);
+    @media (max-width: 320px) {
+      top: 2185px;
+      left: calc(~"40% - 30px");
+    }
   }
 
 
@@ -657,10 +662,6 @@ h3 {
       }
     }
 
-    &_b {
-      padding-bottom: 4%;
-    }
-
     @media (max-width: 1024px) {
       font-size: 13px;
       padding: 0 55px 0 19px;
@@ -671,6 +672,13 @@ h3 {
     @media (max-width: 320px) {
       width: 100%;
       padding: 30px 10px 0;
+    }
+
+    &_b {
+      padding-bottom: 4%;
+      @media (max-width: 320px) {
+        padding-bottom: 30px;
+      }
     }
 
     & > hr {
@@ -844,6 +852,9 @@ h3 {
   @media (max-width: 768px) {
     padding-top: 0;
   }
+  @media (max-width: 320px) {
+    display: none;
+  }
 
 
   &-header {
@@ -905,17 +916,13 @@ h3 {
     }
 
     & > h2, h3 {
+      color: #000000;
       margin: 0;
+      @media (max-width: 320px) {
+        font-size: 18px;
+      }
     }
 
-    & > h2 {
-      @media (max-width: 760px) {
-        font-size: 25px;
-      }
-      @media (max-width: 640px) {
-        font-size: 20px;
-      }
-    }
   }
 
   &-gallery {
@@ -942,8 +949,8 @@ h3 {
     @media (max-width: 768px) {
       padding: 20px 180px 21px;
     }
-    @media (max-width: 425px) {
-      padding: 20px 20px 21px;
+    @media (max-width: 320px) {
+      padding: 30px 60px;
     }
 
 
@@ -960,15 +967,18 @@ h3 {
         @media (max-width: 760px) {
           font-size: 20px;
         }
-        @media (max-width: 640px) {
-          font-size: 15px;
+        @media (max-width: 320px) {
+          font-size: 24px;
+          line-height: 31px;
+          margin-bottom: 20px;
         }
       }
 
       & > span {
         font-size: 20px;
-        @media (max-width: 640px) {
-          font-size: 15px;
+        @media (max-width: 320px) {
+          font-size: 20px;
+          line-height: 102.4%;
         }
       }
     }
@@ -997,8 +1007,8 @@ h3 {
 
 .social {
   margin-top: 69.62px;
-  @media (max-width: 425px) {
-    margin-top: 20px;
+  @media (max-width: 320px) {
+    display: none;
   }
 
   & > a > img {
@@ -1018,7 +1028,7 @@ h3 {
     font-size: 13px;
   }
   @media (max-width: 320px) {
-    padding: 5px 17px 5px;
+    padding: 10px 50px;
   }
 
   & > p {
@@ -1029,13 +1039,15 @@ h3 {
       font-size: 13px;
     }
     @media (max-width: 320px) {
-      font-size: 11px;
+      font-size: 12px;
+      line-height: 115.6%;
     }
+  }
 
-    & > a {
-      margin-left: 5px;
-      color: #444343;
-    }
+  & > a {
+    text-decoration: none;
+    margin-left: 5px;
+    color: #444343;
   }
 }
 
