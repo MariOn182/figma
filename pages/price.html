@@ -154,13 +154,13 @@
 <div class="works">
     <div class="works-info">
         <h2>Следите за моими работами в Instagram</h2>
-        <h3>@Kobara_photo</h3>
+        <h3>@Marina_Kobara_photo</h3>
     </div>
     <div class="works-gallery">
         <img src="../tests/assets/images/works-block-fon.jpg" alt="works-block-fon">
     </div>
 </div>
-<footer class="footer">
+<footer class="footer ">
     <div class="footer-text">
         <div class="footer-text__title">
             <h2>Забронируйте дату съемки!</h2>
@@ -168,9 +168,25 @@
         </div>
         <div class="footer-text__buttons">
             <button class="uk-button uk-button-default user-button user-button_n">
-                Бронировать дату
+                бронировать дату
             </button>
-            <button class="uk-button uk-button-default user-button user-button_w">Заказать звонок</button>
+            <button class="uk-button uk-button-default user-button user-button_w" uk-toggle="target: #modal-example">
+                заказать звонок
+            </button>
+            <div id="modal-example" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body modal-window">
+                    <button class="uk-modal-close-default" type="button" uk-close></button>
+                    <div><h2 class="uk-modal-title">MK</h2></div>
+                    <form>
+                        <p>Хотите узнавать первым о скидках и акциях на мои фотосессии?
+                            Оставьте свой e-mail.</p>
+                        <input class="modal-window__field" value="e-mail">
+                        <p class="uk-text-right">
+                            <button class="uk-button" type="button">Отправить</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
         </div>
         <div class="social">
             <a href="#"><img src="../tests/assets/images/telegram%201.png" alt="telegram"></a>
@@ -182,7 +198,8 @@
         </div>
     </div>
     <div class="copyright">
-        <p>© 2020 Фотограф Марина Кобара<a href="tel:+79996665588">+7(999)666-55-88</a></p>
+        <p>© 2020 Фотограф Марина Кобара</p>
+        <a href="tel:+79996665588">+7(999)666-55-88</a>
     </div>
 </footer>
 </body>
