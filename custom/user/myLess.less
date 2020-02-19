@@ -550,45 +550,51 @@ h3 {
     margin: 0 200px;
   }
 
-  &__item {
+  &__list {
     display: flex;
     margin-bottom: 45px;
     justify-content: center;
+  }
 
-    & > div > img {
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    & > img {
       border-radius: 250px;
       margin-bottom: 20px;
       width: 353px;
       height: fit-content;
     }
 
-    & > div > button {
-      width: 355px;
-    }
-
-    & > div > div {
-      width: 355px;
-      padding: 30px 20px 20px 30px;
-      margin-bottom: 15px;
-      background: #EFEFEF;
-      border-radius: 7px;
-      flex-basis: 20%;
-    }
-
-    & > div:not(:last-child) {
+    &:not(:last-child) {
       margin-right: 80px;
     }
 
-    & > div > div > h3 {
-      padding-top: 27px;
+    & > button {
+      height: 60px;
+      width: 355px;
+    }
+  }
+
+  &__test {
+    flex-basis: 100%;
+    width: 355px;
+    padding: 30px 20px 20px 30px;
+    margin-bottom: 15px;
+    background: #EFEFEF;
+    border-radius: 7px;
+
+    & > h3 {
+      padding-top: 30px;
       font-size: 36px;
     }
 
-    & > div > div > h4 {
-      font-size: 22px;
+    & > h4 {
+      font-size: 20px;
     }
 
-    & > div > div > p {
+    & > p {
       text-align: initial;
       font-size: 22px;
       line-height: 104.6%;
