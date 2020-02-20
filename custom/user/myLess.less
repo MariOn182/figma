@@ -16,6 +16,9 @@ h3 {
 .expand {
   background: #636363;
   margin-bottom: 80px;
+  @media (max-width: 320px) {
+    margin-bottom: 40px;
+  }
 
   &-main {
     margin-bottom: 80px;
@@ -307,6 +310,10 @@ h3 {
   justify-content: space-between;
   position: relative;
   margin-bottom: 50px;
+  @media (max-width: 320px) {
+    align-items: center;
+    justify-content: flex-end;
+  }
 
   &-logo {
     position: absolute;
@@ -316,11 +323,20 @@ h3 {
     font-family: 'Akronim', cursive;
     font-size: 129px;
     line-height: 147px;
+    @media (max-width: 320px) {
+      top: -20px;
+      left: 0;
+      font-size: 80px;
+      color: #fff;
+    }
   }
 
   &-text {
     position: relative;
     padding: 30px 0 12px 190px;
+    @media (max-width: 320px) {
+      display: none;
+    }
 
 
     & > span {
@@ -448,6 +464,10 @@ h3 {
   & > a {
     color: #DBD9D9;
     text-decoration: none;
+  }
+
+  &_p {
+
   }
 
 }
@@ -941,6 +961,9 @@ h3 {
   font-family: 'PT Sans', sans-serif;
   align-items: center;
   padding: 0 90px;
+  @media (max-width: 320px) {
+    padding: 0 40px;
+  }
 
   &-text {
     text-align: center;
@@ -956,21 +979,12 @@ h3 {
 
   &-gallery {
     display: flex;
-    flex-direction: column;
-
-    &__list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-bottom: 40px;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     &__item {
       flex-basis: 30%;
+      margin-bottom: 40px;
 
       & > img {
         object-fit: cover;
