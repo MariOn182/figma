@@ -147,16 +147,21 @@
             <button class="uk-button uk-button-default user-button user-button_w" uk-toggle="target: #modal-example">
                 заказать звонок
             </button>
+            <button class="uk-button uk-button-default user-button user-button_a">
+                оформить заявку
+            </button>
             <div id="modal-example" uk-modal>
                 <div class="uk-modal-dialog uk-modal-body modal-window">
                     <button class="uk-modal-close-default" type="button" uk-close></button>
-                    <div><h2 class="uk-modal-title">MK</h2></div>
-                    <form>
+                    <div class="modal-window__item">
+                        <div class="modal-window__title"><h2 class="uk-modal-title">MK</h2></div>
                         <p>Хотите узнавать первым о скидках и акциях на мои фотосессии?
                             Оставьте свой e-mail.</p>
-                        <input class="modal-window__field" value="e-mail">
+                    </div>
+                    <form class="modal-window__form" method="post">
+                        <input class="modal-window-field" type="email" placeholder="e-mail" required>
                         <p class="uk-text-right">
-                            <button class="uk-button" type="button">Отправить</button>
+                            <button class="uk-button user-button user-button_s" type="submit">Отправить</button>
                         </p>
                     </form>
                 </div>
