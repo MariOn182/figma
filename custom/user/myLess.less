@@ -191,7 +191,7 @@ h3 {
     justify-content: space-between;
     align-items: baseline;
     @media (max-width: 1300px) {
-      padding: 0 40px;
+      padding: 20px 40px 0;
     }
     @media (max-width: 768px) {
       align-items: baseline;
@@ -462,6 +462,7 @@ h3 {
   @media (max-width: 5000px) and (min-width: 321px) {
     display: none;
   }
+
   & > a {
     color: #DBD9D9;
     text-decoration: none;
@@ -789,16 +790,17 @@ h3 {
     width: 45%;
     background: linear-gradient(-90deg, #F2F2F2 -1.83%, rgba(181, 181, 181, 0) 85.49%);
     text-align: center;
-    padding-top: 190px;
     padding-right: 110px;
     display: flex;
     flex-direction: column;
+    padding-top: 100px;
     @media (max-width: 1300px) {
       padding: 80px 120px 0 0;
     }
     @media (max-width: 320px) {
       display: none;
     }
+
 
     & > h4 {
       font-size: 33px;
@@ -836,6 +838,13 @@ h3 {
       width: 100%;
       text-align: center;
       padding: 0;
+    }
+
+    &_b {
+      padding-bottom: 80px;
+      @media (max-width: 1300px) {
+        padding-bottom: 40px;
+      }
     }
   }
 
