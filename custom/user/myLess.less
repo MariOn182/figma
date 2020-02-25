@@ -747,7 +747,7 @@ h3 {
     background: #ffffff;
     transform: rotate(-45deg);
     @media (max-width: 1300px) {
-      left: calc(~"45% - 42px");
+      left: calc(~"45% - 46px");
     }
     @media (max-width: 320px) {
       top: -110px;
@@ -766,11 +766,7 @@ h3 {
     background: #ffffff;
     transform: rotate(-45deg);
     @media (max-width: 1300px) {
-      top: 2060px;
-      left: calc(~"45% + 3px");
-    }
-    @media (max-width: 1250px) {
-      top: 1790px;
+      left: calc(~"45% - 46px");
     }
     @media (max-width: 320px) {
       display: none;
@@ -780,6 +776,9 @@ h3 {
   &__item {
     display: flex;
     padding-left: 90px;
+    @media (max-width: 1300px) {
+      padding: 0;
+    }
     @media (max-width: 320px) {
       padding: 0;
       margin: 0;
@@ -793,6 +792,11 @@ h3 {
     text-align: center;
     padding-top: 190px;
     padding-right: 110px;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 1300px) {
+      padding: 80px 120px 0 0;
+    }
     @media (max-width: 320px) {
       display: none;
     }
@@ -800,15 +804,24 @@ h3 {
     & > h4 {
       font-size: 33px;
       line-height: 104.6%;
+      @media (max-width: 1300px) {
+        font-size: 25px;
+      }
     }
 
     & > hr {
       width: 340px;
+      @media (max-width: 1300px) {
+        width: 280px;
+      }
     }
 
     & > p {
       font-size: 25px;
       line-height: 104.6%;
+      @media (max-width: 1300px) {
+        font-size: 18px;
+      }
     }
   }
 
@@ -816,6 +829,9 @@ h3 {
     width: 55%;
     background: linear-gradient(90.53deg, #B5B5B5 9.77%, rgba(181, 181, 181, 0) 99.87%);
     padding-top: 80px;
+    @media (max-width: 1300px) {
+      padding: 40px 0;
+    }
     @media (max-width: 320px) {
       background: linear-gradient(-90deg, #F2F2F2 -1.83%, rgba(181, 181, 181, 0) 85.49%);
       width: 100%;
@@ -831,6 +847,9 @@ h3 {
     width: 110%;
     height: 260px;
     margin-left: -10%;
+    @media (max-width: 1300px) {
+      height: 200px;
+    }
     @media (max-width: 320px) {
       flex-direction: column;
       width: 100%;
@@ -868,7 +887,7 @@ h3 {
       display: flex;
       justify-content: flex-end;
       margin-right: 14%;
-      @media (max-width: 320px) {
+      @media (max-width: 1300px) {
         margin: 0;
       }
     }
@@ -877,12 +896,18 @@ h3 {
     &__image {
       flex-basis: 28%;
       margin-right: 2%;
+      @media (max-width: 1300px) {
+        flex-basis: 33%;
+      }
       @media (max-width: 320px) {
         display: none;
       }
 
       &_l {
         flex-basis: 40%;
+        @media (max-width: 1300px) {
+          flex-basis: 50%;
+        }
       }
 
       &_a {
@@ -918,18 +943,6 @@ h3 {
 
   }
 
-}
-
-.image__link {
-
-  @media (max-width: 1250px) {
-    height: 80%;
-  }
-
-  & > img {
-    height: 100%;
-    object-fit: cover;
-  }
 }
 
 .portfolio {
