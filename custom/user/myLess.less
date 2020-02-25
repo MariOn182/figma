@@ -728,6 +728,7 @@ h3 {
 .portfolio-block {
   position: relative;
   display: flex;
+  flex-direction: column;
   overflow: hidden;
   padding: 0 40px;
   @media (max-width: 320px) {
@@ -737,8 +738,8 @@ h3 {
 
   &:before {
     position: absolute;
-    top: -90px;
-    left: calc(~"40% - 44px");
+    top: -100px;
+    left: calc(~"45% + 3px");
     content: '';
     display: block;
     width: 100px;
@@ -746,18 +747,18 @@ h3 {
     background: #ffffff;
     transform: rotate(-45deg);
     @media (max-width: 1300px) {
-      left: calc(~"40% - 42px");
+      left: calc(~"45% - 42px");
     }
     @media (max-width: 320px) {
       top: -110px;
-      left: calc(~"40% - 30px");
+      left: calc(~"45% - 45px");
     }
   }
 
   &:after {
     position: absolute;
-    top: 2100px;
-    left: calc(~"40% - 44px");
+    top: 100%;
+    left: calc(~"45% + 3px");
     content: '';
     display: block;
     width: 100px;
@@ -766,7 +767,7 @@ h3 {
     transform: rotate(-45deg);
     @media (max-width: 1300px) {
       top: 2060px;
-      left: calc(~"40% - 42px");
+      left: calc(~"45% + 3px");
     }
     @media (max-width: 1250px) {
       top: 1790px;
@@ -776,147 +777,53 @@ h3 {
     }
   }
 
-  &__left {
-    width: 40%;
-    background: linear-gradient(-90deg, #F2F2F2 -1.83%, rgba(181, 181, 181, 0) 85.49%);
-    @media (max-width: 320px) {
-      width: 100%;
-    }
-  }
-
-  &__right {
-    width: 60%;
-    background: linear-gradient(90.53deg, #B5B5B5 9.77%, rgba(181, 181, 181, 0) 99.87%);
-    @media (max-width: 320px) {
-      display: none;
-    }
-  }
-
-  &-wrapper {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-top: 180px;
-    @media (max-width: 1300px) {
-      justify-content: space-around;
-      padding-top: 80px;
-    }
-    @media (max-width: 1250px) {
-      padding-top: 40px;
-    }
-    @media (max-width: 320px) {
-      padding-top: 30px;
-    }
-
-    &_r {
-      display: flex;
-      flex-direction: column;
-      padding-top: 80px;
-      padding-right: 100px;
-      @media (max-width: 1300px) {
-        padding-right: 0;
-        padding-top: 40px;
-      }
-    }
-  }
-
   &__item {
     display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 50px 0 80px;
-    margin-bottom: 80px;
-    @media (max-width: 1300px) {
-      margin-bottom: 40px;
-      padding: 0 120px 0 0;
-    }
-    @media (max-width: 1250px) {
-      padding: 0 50px 0 0;
-    }
+    padding-left: 90px;
     @media (max-width: 320px) {
-      width: 100%;
-      padding: 0 10px;
-      margin-bottom: 25px;
-    }
-
-
-    &_r {
-      width: 100%;
-      margin-bottom: 80px;
-      @media (max-width: 1250px) {
-        &:last-child {
-          margin-bottom: 0;
-        }
-
-        margin-bottom: 40px;
-      }
-      @media (max-width: 320px) {
-        display: none;
-      }
-    }
-
-    & > img {
-      display: none;
-      @media ( max-width: 320px) {
-        margin-bottom: 15px;
-        display: block;
-      }
-    }
-
-
-    &_b {
-      padding-bottom: 4%;
-      @media (max-width: 320px) {
-        padding-bottom: 30px;
-      }
-    }
-
-    & > hr {
-      width: 370px;
-      align-self: center;
+      padding: 0;
       margin: 0;
-      @media (max-width: 1300px) {
-        width: 330px;
-      }
-      @media (max-width: 1250px) {
-        width: 280px;
-      }
-      @media (max-width: 320px) {
-        display: none;
-      }
+    }
+  }
+
+
+  &-left {
+    width: 45%;
+    background: linear-gradient(-90deg, #F2F2F2 -1.83%, rgba(181, 181, 181, 0) 85.49%);
+    text-align: center;
+    padding-top: 190px;
+    padding-right: 110px;
+    @media (max-width: 320px) {
+      display: none;
     }
 
     & > h4 {
       font-size: 33px;
-      font-family: 'PT Sans', sans-serif;
-      color: #000;
-      @media (max-width: 1300px) {
-        font-size: 20px;
-      }
+      line-height: 104.6%;
+    }
 
-      @media (max-width: 320px) {
-        line-height: 104.6%;;
-        margin-bottom: 15px;
-      }
+    & > hr {
+      width: 340px;
     }
 
     & > p {
       font-size: 25px;
       line-height: 104.6%;
-
-      @media (max-width: 1300px) {
-        font-size: 15px;
-      }
-      @media (max-width: 320px) {
-        font-size: 14px;
-        line-height: 104.6%;
-        padding: 0;
-        margin: 0;
-      }
     }
   }
+
+  &-right {
+    width: 55%;
+    background: linear-gradient(90.53deg, #B5B5B5 9.77%, rgba(181, 181, 181, 0) 99.87%);
+    padding-top: 80px;
+    @media (max-width: 320px) {
+      background: linear-gradient(-90deg, #F2F2F2 -1.83%, rgba(181, 181, 181, 0) 85.49%);
+      width: 100%;
+      text-align: center;
+      padding: 0;
+    }
+  }
+
 
   &-gallery {
     display: flex;
@@ -924,29 +831,97 @@ h3 {
     width: 110%;
     height: 260px;
     margin-left: -10%;
+    @media (max-width: 320px) {
+      flex-direction: column;
+      width: 100%;
+      margin: 0 0 25px;
+      height: auto;
+    }
+
+    &_t {
+      @media (max-width: 320px) {
+        padding-top: 30px;
+      }
+    }
+
+    & > h4 {
+      @media (min-width: 321px) and (max-width: 4000px) {
+        display: none;
+      }
+      @media (max-width: 320px) {
+        font-size: 20px;
+        line-height: 104.6%;
+      }
+    }
+
+    & > div > p {
+      @media (min-width: 321px) and (max-width: 4000px) {
+        display: none;
+      }
+      @media (max-width: 320px) {
+        font-size: 14px;
+        margin: 0 20px;
+      }
+    }
+
+    &__item {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 14%;
+      @media (max-width: 320px) {
+        margin: 0;
+      }
+    }
+
 
     &__image {
-      width: 200px;
-      height: 260px;
-      flex-basis: 25%;
-      margin-right: 3%;
+      flex-basis: 28%;
+      margin-right: 2%;
+      @media (max-width: 320px) {
+        display: none;
+      }
 
       &_l {
         flex-basis: 40%;
       }
+
+      &_a {
+        @media (max-width: 320px) {
+          display: flex;
+          flex-direction: column;
+          flex-basis: 100%;
+          margin: 0 0 15px;
+          padding: 0 15px;
+        }
+      }
+
+      & > a {
+        overflow: hidden;
+        height: 100%;
+      }
+
+
+      & > a > img {
+        object-fit: cover;
+        height: 100%;
+        @media (max-width: 320px) {
+          height: 260px;
+          width: 290px;
+        }
+      }
+
     }
 
     &__image:last-child {
       margin-right: 0;
     }
+
   }
 
 }
 
 .image__link {
-  overflow: hidden;
-  display: block;
-  height: 100%;
+
   @media (max-width: 1250px) {
     height: 80%;
   }
