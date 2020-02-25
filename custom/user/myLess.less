@@ -1094,6 +1094,7 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 10px;
 
   &-info {
     padding: 0 232px;
@@ -1134,15 +1135,19 @@ h3 {
     }
 
   }
-}
 
-&-gallery {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  &-gallery {
 
-  & > img {
-    width: inherit;
+
+    &__item {
+
+      & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+    }
   }
 }
 
