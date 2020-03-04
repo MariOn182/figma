@@ -739,15 +739,16 @@ p {
       display: none;
     }
     @media (max-width: 320px) {
-      margin-bottom: 30px;
+      margin: 0 0 30px;
     }
 
-    &:last-child {
-      margin-bottom: 40px;
-    }
   }
 
   &-field {
+    @media (max-width: 320px) {
+      margin-bottom: 20px;
+    }
+
     &-text {
       margin-bottom: 60px;
       padding: 0 210px;
@@ -848,7 +849,7 @@ p {
   &-textarea {
     resize: none;
     width: 450px;
-    height: 202px;
+    height: 210px;
     padding: 20px;
     margin: 15px;
     color: #6B6A6A;
@@ -1542,6 +1543,9 @@ p {
 
 
     &__item {
+      @media (max-width: 320px) {
+
+      }
 
       & > img {
         width: 100%;
