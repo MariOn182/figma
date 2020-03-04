@@ -22,6 +22,16 @@
                 <ul>
                     <li><a href="./index.html" class="main-menu__link">главная</a></li>
                     <li><a href="./portfolio.html" class="main-menu__link">портфолио</a></li>
+                    <div class="dropdown-list dropdown-list_p"
+                         uk-dropdown="pos: top-left; animation: uk-animation-slide-top-small uk-transform-origin-bottom-right; duration: 500">
+                        <ul class="uk-nav uk-dropdown-nav dropdown-list">
+                            <li><a href="#">Свадебная съемка</a></li>
+                            <li><a href="#">Семейная съемка</a></li>
+                            <li><a href="#">Детская съемка</a></li>
+                            <li><a href="#">Портретная съемка</a></li>
+                            <li><a href="#">Девушки</a></li>
+                        </ul>
+                    </div>
                     <li><a href="./price.html" class="main-menu__link">услуги и цены</a></li>
                     <li><a href="./application_form.html" class="main-menu__link">контакты</a></li>
                 </ul>
@@ -48,63 +58,59 @@
         </header>
     </div>
 </div>
-<div class="uk-container uk-container-large">
-    <div class="application">
-        <div class="application-contacts">
-            <div class="application-contacts-city">Тюмень</div>
-            <div class="application-contacts-other">
-                <div class="application-contacts-other__item">
-                    <h2>Телефон</h2>
-                    <h4><a href="tel:+79000000000">+7(900)000-00-00</a></h4>
-                    <span><a href="tel:+79000000000" class="uk-icon-button uk-margin-small-right"
-                             uk-icon="icon: receiver; ratio: 2"></a></span>
-                </div>
-                <div class="application-contacts-other__item">
-                    <h2>E-mail</h2>
-                    <h4><a href="mailto:MarinaKobara@mail.ru">MarinaKobara@mail.ru</a></h4>
-                    <span><a href="mailto:MarinaKobara@mail.ru" class="uk-icon-button uk-margin-small-right"
-                             uk-icon="icon: mail; ratio: 2"></a></span>
-                </div>
-                <div class="application-contacts-other__item">
-                    <h2>Instagram</h2>
-                    <h4>@marinako_photo</h4>
-                    <span><a href="" class="uk-icon-button uk-margin-small-right"
-                             uk-icon="icon: instagram; ratio: 2"></a></span>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="application-field">
-            <div class="application-field-text">
-                <h2>Заполните форму заказа</h2>
-                <p>Я рада, что Вы выбрали меня фотографом!</p>
-                <p class="hidden-p"> Фотосессия пройдет легко и вы получите удовольствие и массу приятных ощущений. Фото
-                    Вы будете
-                    пересматривать
-                    еще долгие годы. </p>
-            </div>
-            <div class="application-field-form">
-                <form method="post">
-                    <div class="application-form">
-                        <div>
-                            <input type="text" placeholder="Имя и Фамилия">
-                            <input type="tel" placeholder="Номер телефона" required>
-                            <input type="email" placeholder="e-mail" required>
-                            <input type="text" placeholder="Тип съёмки">
-                        </div>
-                        <div>
-                            <input type="date" placeholder="Интересующая дата">
-                            <textarea placeholder="Ваши пожелания" class="application-textarea"></textarea>
-                        </div>
+<div class="main">
+    <div class="uk-container uk-container-large">
+        <div class="application">
+            <div class="application-contacts">
+                <div class="application-contacts-city">Тюмень</div>
+                <div class="application-contacts-other">
+                    <div class="application-contacts-other__item">
+                        <h2>Телефон</h2>
+                        <h4><a href="tel:+79000000000">+7(900)000-00-00</a></h4>
                     </div>
-                    <button type="submit" class="uk-button uk-button-default user-button user-button_r">ОТПРАВИТЬ ЗАЯВКУ
-                    </button>
-                </form>
+                    <div class="application-contacts-other__item">
+                        <h2>E-mail</h2>
+                        <h4><a href="mailto:MarinaKobara@mail.ru">MarinaKobara@mail.ru</a></h4>
+                    </div>
+                    <div class="application-contacts-other__item">
+                        <h2>Instagram</h2>
+                        <h4>@marinako_photo</h4>
+                    </div>
+                </div>
             </div>
+            <hr>
+            <div class="application-field">
+                <div class="application-field-text">
+                    <h2>Заполните форму заказа</h2>
+                    <p>Я рада, что Вы выбрали меня фотографом!</p>
+                    <p> Фотосессия пройдет легко и вы получите удовольствие и массу приятных ощущений. </p>
+                    <p> Фото Вы будете пересматривать еще долгие годы. </p>
+                </div>
+                <div class="application-field-form">
+                    <form method="post">
+                        <div class="application-form">
+                            <div>
+                                <input type="text" placeholder="Имя и Фамилия">
+                                <input type="tel" placeholder="Номер телефона" required>
+                                <input type="email" placeholder="e-mail" required>
+                                <input type="text" placeholder="Тип съёмки">
+                            </div>
+                            <div>
+                                <input type="date" placeholder="Интересующая дата">
+                                <textarea placeholder="Ваши пожелания" class="application-textarea"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="uk-button uk-button-default user-button user-button_r">ОТПРАВИТЬ
+                            ЗАЯВКУ
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <hr>
         </div>
-        <hr>
     </div>
 </div>
+
 <div class="favorite">
     <div class="favorite-header">
         <h2>Избранные фото</h2>
