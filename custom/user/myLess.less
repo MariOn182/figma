@@ -1,3 +1,15 @@
+//Colors;
+@gray-color: #444343;
+@gray-light-color: rgba(0, 0, 0, 0.68);
+@gray-dark-color: #1D1D1D;
+@white-color: #FFFFFF;
+@red-color: #FF6E6E;
+@background-light-color: #DDDADA;
+@background-dark-color: #636363;
+@background-darker-color: #B5B5B5;
+@background-lighter-color: #EFEFEF;
+@background-light-gradient-color: linear-gradient(90deg, #F2F2F2 -1.83%, rgba(181, 181, 181, 0) 85.49%);
+@background-dark-gradient-color: linear-gradient(90.53deg, #B5B5B5 9.77%, rgba(181, 181, 181, 0) 99.87%);
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +45,7 @@ input[type="date"] {
 }
 
 .expand {
-  background: #636363;
+  background: @background-dark-color;
   margin-bottom: 80px;
   @media (max-width: 1180px) {
     margin-bottom: 20px;
@@ -60,9 +72,9 @@ input[type="date"] {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  border: 2px solid #FFFFFF;
+  border: 2px solid @white-color;
   width: 196px;
-  color: #444343;
+  color: @gray-color;
   transition: all 0.3s ease 0s;
   font-family: 'PT Sans', sans-serif;
 
@@ -72,7 +84,7 @@ input[type="date"] {
 
 
   &_m {
-    color: #FFFFFF;
+    color: @white-color;
     margin-right: 5px;
     background: rgba(0, 0, 0, 0.24);
     transition: all 0.3s ease 0s;
@@ -88,9 +100,9 @@ input[type="date"] {
   }
 
   &_n {
-    color: #FFFFFF;
+    color: @white-color;
     margin-right: 5px;
-    background: #B5B5B5;
+    background: @background-darker-color;
     transition: all 0.3s ease 0s;
     @media (max-width: 450px) {
       display: none;
@@ -113,8 +125,8 @@ input[type="date"] {
   }
 
   &_a {
-    color: #ffffff;
-    background: #B5B5B5;
+    color: @white-color;
+    background: @background-darker-color;
     @media (min-width: 451px) and (max-width: 10000px) {
       display: none;
     }
@@ -124,8 +136,8 @@ input[type="date"] {
     width: 340px;
     height: 65px;
     font-size: 23px;
-    color: #FFFFFF;
-    background: #FF6E6E;
+    color: @white-color;
+    background: @red-color;
     border-radius: 7px;
     transition: all 0.3s ease 0s;
   }
@@ -134,8 +146,8 @@ input[type="date"] {
     width: 250px;
     height: 50px;
     font-size: 23px;
-    color: #FFFFFF;
-    background: #FF6E6E;
+    color: @white-color;
+    background: @red-color;
     border-radius: 7px;
     transition: all 0.3s ease 0s;
   }
@@ -155,7 +167,7 @@ input[type="date"] {
 
 
   &__title {
-    background: #FF6E6E;
+    background: @red-color;
     width: 100px;
     height: 100px;
     border-radius: 50px;
@@ -166,7 +178,7 @@ input[type="date"] {
     & > h2 {
       font-size: 45px;
       margin: 0;
-      color: #ffffff;
+      color: @white-color;
       font-family: 'Akronim', cursive;
     }
   }
@@ -397,7 +409,7 @@ input[type="date"] {
 
     & > h1 {
       font-family: 'Forum', cursive;
-      color: #FFFFFF;
+      color: @white-color;
       font-size: 54px;
       margin: 0;
       @media (max-width: 1180px) {
@@ -435,7 +447,7 @@ input[type="date"] {
         font-size: 20px;
         @media (max-width: 768px) {
           font-size: 16px;
-          color: #FFFFFF;
+          color: @white-color;
           font-family: 'PT Sans', sans-serif;
         }
 
@@ -505,7 +517,7 @@ input[type="date"] {
 
 
     & > li > a {
-      color: #FFFFFF;
+      color: @white-color;
       font-size: 18px;
       text-decoration: none;
       cursor: pointer;
@@ -585,7 +597,7 @@ input[type="date"] {
 .info {
   padding: 0 130px;
   margin-bottom: 80px;
-  background: #FFFFFF;
+  background: @white-color;
   display: flex;
   justify-content: center;
   font-family: 'PT Sans', sans-serif;
@@ -649,7 +661,7 @@ input[type="date"] {
         margin-top: 0;
         line-height: 104.6%;
         font-size: 55px;
-        color: #444343;
+        color: @gray-color;
         @media (max-width: 1250px) {
           font-size: 35px;
         }
@@ -723,7 +735,7 @@ input[type="date"] {
 .application {
   padding: 0 145px;
   text-align: center;
-  color: #444343;
+  color: @gray-color;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -836,7 +848,7 @@ input[type="date"] {
         }
 
         & > h4 > a {
-          color: #444343;
+          color: @gray-color;
           text-decoration: none;
         }
       }
@@ -1024,7 +1036,7 @@ input[type="date"] {
 
 .price {
   text-align: center;
-  color: #444343;
+  color: @gray-color;
   padding: 0 100px 0 40px;
   display: flex;
   flex-direction: column;
@@ -1142,13 +1154,14 @@ input[type="date"] {
         font-size: 23px;
       }
     }
+
   }
 
   &-test {
     height: 100%;
     padding: 30px 20px 20px 30px;
     margin-bottom: 15px;
-    background: #EFEFEF;
+    background: @background-lighter-color;
     border-radius: 7px;
     @media (max-width: 1180px) {
       width: auto;
@@ -1187,6 +1200,7 @@ input[type="date"] {
         line-height: 104.6%;
         padding: 5px 0;
         font-family: 'PT Sans', sans-serif;
+        color: @gray-dark-color;
         @media (max-width: 1180px) {
           font-size: 17px;
         }
@@ -1213,7 +1227,7 @@ input[type="date"] {
         font-family: 'PT Sans', sans-serif;
         font-size: 35px;
         margin: 0;
-        color: #444343;
+        color: @gray-color;
 
         @media (max-width: 1235px) {
           font-size: 2vw;
@@ -1230,7 +1244,7 @@ input[type="date"] {
       & > h4 {
         font-size: 22px;
         font-family: 'PT Sans', sans-serif;
-        color: #444343;
+        color: @gray-color;
         margin: 0;
         @media (max-width: 1235px) {
           font-size: 18px;
@@ -1272,7 +1286,7 @@ input[type="date"] {
     display: block;
     width: 100px;
     height: 100px;
-    background: #ffffff;
+    background: @white-color;
     transform: rotate(-45deg);
     @media (max-width: 1300px) {
       left: calc(~"45% - 46px");
@@ -1297,7 +1311,7 @@ input[type="date"] {
     display: block;
     width: 100px;
     height: 100px;
-    background: #ffffff;
+    background: @white-color;
     transform: rotate(-45deg);
     @media (max-width: 1300px) {
       left: calc(~"45% - 46px");
@@ -1325,7 +1339,7 @@ input[type="date"] {
 
   &-left {
     width: 45%;
-    background: linear-gradient(-90deg, #F2F2F2 -1.83%, rgba(181, 181, 181, 0) 85.49%);
+    background: @background-light-gradient-color;
     text-align: center;
     padding-right: 110px;
     display: flex;
@@ -1342,7 +1356,7 @@ input[type="date"] {
     @media (max-width: 768px) {
       width: 70%;
     }
-    @media (max-width: 450px) {
+    @media (max-width: 680px) {
       display: none;
     }
 
@@ -1375,7 +1389,7 @@ input[type="date"] {
     & > p {
       font-size: 25px;
       line-height: 104.6%;
-      color: rgba(0, 0, 0, 0.68);
+      color: @gray-light-color;
       @media (max-width: 1300px) {
         font-size: 18px;
       }
@@ -1387,7 +1401,7 @@ input[type="date"] {
 
   &-right {
     width: 55%;
-    background: linear-gradient(90.53deg, #B5B5B5 9.77%, rgba(181, 181, 181, 0) 99.87%);
+    background: @background-dark-gradient-color;
     padding-top: 80px;
     @media (max-width: 1300px) {
       padding: 40px 0;
@@ -1395,12 +1409,12 @@ input[type="date"] {
     @media (max-width: 1180px) {
       width: 40%;
     }
-    @media (min-width: 451px) and (max-width: 768px) {
+    @media (min-width: 681px) and (max-width: 768px) {
       width: 30%;
       padding: 15px 0;
     }
-    @media (max-width: 450px) {
-      background: linear-gradient(-90deg, #F2F2F2 -1.83%, rgba(181, 181, 181, 0) 85.49%);
+    @media (max-width: 680px) {
+      background: @background-light-gradient-color;
       width: 100%;
       text-align: center;
       padding: 0;
@@ -1428,7 +1442,7 @@ input[type="date"] {
       width: 100%;
       margin: 0;
     }
-    @media (max-width: 450px) {
+    @media (max-width: 680px) {
       flex-direction: column;
       margin: 0 0 25px;
       height: auto;
@@ -1441,20 +1455,20 @@ input[type="date"] {
     }
 
     & > h4 {
-      @media (min-width: 451px) and (max-width: 10000px) {
+      @media (min-width: 681px) and (max-width: 10000px) {
         display: none;
       }
-      @media (max-width: 450px) {
+      @media (max-width: 680px) {
         font-size: 20px;
         line-height: 104.6%;
       }
     }
 
     & > div > p {
-      @media (min-width: 451px) and (max-width: 10000px) {
+      @media (min-width: 681px) and (max-width: 10000px) {
         display: none;
       }
-      @media (max-width: 450px) {
+      @media (max-width: 680px) {
         font-size: 14px;
         margin: 0 20px;
       }
@@ -1547,7 +1561,7 @@ input[type="date"] {
 
     & > h2 {
       margin-bottom: 40px;
-      color: #444343;
+      color: @gray-color;
       @media (max-width: 1180px) {
         font-size: 35px;
         margin-bottom: 20px;
@@ -1559,7 +1573,7 @@ input[type="date"] {
 
     & > h4 {
       margin-bottom: 80px;
-      color: rgba(0, 0, 0, 0.68);
+      color: @gray-light-color;
       @media (max-width: 1180px) {
         font-size: 24px;
         margin: 0 0 25px;
@@ -1601,7 +1615,7 @@ input[type="date"] {
       }
 
       & > p {
-        color: #444343;
+        color: @gray-color;
         @media (max-width: 1180px) {
           font-size: 17px;
         }
@@ -1660,7 +1674,7 @@ input[type="date"] {
 }
 
 .favorite {
-  background-color: #FFFFFF;
+  background-color: @white-color;
   overflow: hidden;
   margin-bottom: 140px;
   @media (max-width: 1300px) {
@@ -1690,7 +1704,7 @@ input[type="date"] {
     }
 
     & > h2 {
-      color: #444343;
+      color: @gray-color;
       @media (max-width: 1300px) {
         font-size: 35px;
       }
@@ -1751,7 +1765,7 @@ input[type="date"] {
 }
 
 .works {
-  background-color: #FFFFFF;
+  background-color: @white-color;
   margin-bottom: 5px;
 
   &-info {
@@ -1841,7 +1855,7 @@ input[type="date"] {
 
 .footer {
   text-align: center;
-  background: #B5B5B5;
+  background: @background-darker-color;
   display: flex;
   flex-direction: column;
 
@@ -1861,7 +1875,7 @@ input[type="date"] {
 
 
     &__title {
-      color: #FFFFFF;
+      color: @white-color;
       display: flex;
       flex-direction: column;
       margin-bottom: 34px;
@@ -1873,7 +1887,7 @@ input[type="date"] {
       }
 
       & > h2 {
-        color: #FFFFFF;
+        color: @white-color;
         font-size: 30px;
         text-transform: uppercase;
         @media (max-width: 1180px) {
@@ -1937,8 +1951,8 @@ input[type="date"] {
 
 .copyright {
   padding: 25px 227px;
-  background: #DDDADA;
-  color: #444343;
+  background: @background-light-color;
+  color: @gray-color;
   display: flex;
   justify-content: center;
   @media (max-width: 1180px) {
@@ -1961,7 +1975,7 @@ input[type="date"] {
   & > a {
     text-decoration: none;
     margin-left: 5px;
-    color: #444343;
+    color: @gray-color;
     font-family: 'PT Sans', sans-serif;
   }
 }
