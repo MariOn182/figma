@@ -8,7 +8,7 @@
 @background-dark-color: #636363;
 @background-darker-color: #B5B5B5;
 @background-lighter-color: #EFEFEF;
-@background-light-gradient-color: linear-gradient(90deg, #F2F2F2 -1.83%, rgba(181, 181, 181, 0) 85.49%);
+@background-light-gradient-color: linear-gradient(-90deg, #F2F2F2 -1.83%, rgba(181, 181, 181, 0) 85.49%);
 @background-dark-gradient-color: linear-gradient(90.53deg, #B5B5B5 9.77%, rgba(181, 181, 181, 0) 99.87%);
 
 * {
@@ -48,9 +48,14 @@ input[type="date"] {
 
 .expand {
   background: @background-dark-color;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
+
+  &_s {
+    margin-bottom: 30px;
+  }
+
   @media (max-width: 1180px) {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
 
@@ -497,6 +502,7 @@ input[type="date"] {
     }
 
     & > ul > li > a {
+      color: #FFFFFF;
       @media (max-width: 1180px) {
         font-size: 16px;
         line-height: 21px;
@@ -569,7 +575,7 @@ input[type="date"] {
   }
 
   & > a {
-    color: #DBD9D9;
+    color: #C4C4C4;
     text-decoration: none;
   }
 
@@ -1385,7 +1391,7 @@ input[type="date"] {
     }
 
     & > hr {
-      width: 340px;
+      width: 350px;
       @media (max-width: 1300px) {
         width: 280px;
       }
@@ -1564,9 +1570,19 @@ input[type="date"] {
   @media (max-width: 1180px) {
     padding: 0;
   }
+  @media (max-width: 550px) {
+    margin-bottom: 15px;
+  }
 
   &-text {
     text-align: center;
+    margin-bottom: 80px;
+    @media (max-width: 1180px) {
+      margin-bottom: 25px;
+    }
+    @media (max-width: 550px) {
+      margin-bottom: 15px;
+    }
 
     & > h2 {
       margin-bottom: 40px;
@@ -1581,7 +1597,7 @@ input[type="date"] {
     }
 
     & > h4 {
-      margin-bottom: 80px;
+      margin: 0;
       color: @gray-light-color;
       @media (max-width: 1180px) {
         font-size: 24px;
@@ -1600,21 +1616,29 @@ input[type="date"] {
     justify-content: space-between;
 
     &__item {
-      flex-basis: 30%;
-      margin-bottom: 40px;
+      flex-basis: 32%;
+      margin-bottom: 95px;
+
+      &_b {
+        margin-bottom: 0;
+      }
+
       @media (max-width: 1180px) {
         flex-basis: 32%;
       }
       @media (max-width: 600px) {
         flex-basis: 48%;
-        margin-bottom: 0;
+        margin-bottom: 20px;
         text-align: center;
       }
 
       & > img {
         object-fit: cover;
-        width: 360px;
-        height: 535px;
+        width: -webkit-fill-available;
+        width: -moz-available;
+        height: 575px;
+        margin-bottom: 10px;
+
         @media (max-width: 1050px) {
           height: 325px;
         }
@@ -1625,6 +1649,7 @@ input[type="date"] {
 
       & > p {
         color: @gray-color;
+        margin: 0;
         @media (max-width: 1180px) {
           font-size: 17px;
         }
